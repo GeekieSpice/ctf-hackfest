@@ -34,9 +34,12 @@
         <h1>CTF Checklist</h1>
         <ul class="nav nav-tabs">
           <li class="active"><a href="#tabPlaythrough" data-toggle="tab">Hackthrough</a></li>
-          <li><a href="#tabChecklists" data-toggle="tab">Checklists</a></li>
-          <li><a href="#tabSets" data-toggle="tab">Armor by sets</a></li>
-          <li><a href="#tabInformation" data-toggle="tab">Information</a></li>
+          <li><a href="#tabImages" data-toggle="tab">Images</a></li>
+          <li><a href="#tabSets" data-toggle="tab">Passwords</a></li>
+          <li><a href="#tabInformation" data-toggle="tab">Cryptography</a></li>
+          <li><a href="#tabInformation" data-toggle="tab">Software Defined Radio</a></li>
+          <li><a href="#tabInformation" data-toggle="tab">Generic Tools</a></li>
+          <li><a href="#tabInformation" data-toggle="tab">Useful Links</a></li>
           <li><a href="#tabHelp" data-toggle="tab">Help</a></li>
         </ul>
         <div class="profile" style="float: right;">
@@ -52,8 +55,8 @@
 
     <div id="intro">
       <p>
-        The following is a checklist and set of information for use when playing Bloodborne. If this is your first time visiting this page please check out the Help section.
-        This checklist was created by using <a href="https://github.com/smcnabb">Stephen McNabb</a>'s Dark Soul Cheat Sheet code for use with <a href="http://bloodborne.wiki.fextralife.com/Game+Progress+Route">Fextralife's Game Progress Route.</a>
+        The following is a checklist and set of information for use when attempting CTF or Hackfest style challenges.
+        This checklist was created by using <a href="https://github.com/smcnabb">Stephen McNabb</a>'s Dark Soul Cheat Sheet code.
       </p>
       <p>
         <em>Warning: This could be too much fun for you!</em>
@@ -62,7 +65,7 @@
 
     <div class="tab-content">
       <div class="tab-pane active" id="tabPlaythrough">
-        <h2>Hackthrough Checklist <span id="playthrough_overall_total"></span></h2>
+        <h2>Hack All The Things<span id="playthrough_overall_total"></span></h2>
         <ul>
           <li><a href="#images">Images</a> <span id="playthrough_nav_totals_1"></span></li>
           <li><a href="#passwords">Passwords</a> <span id="playthrough_nav_totals_2"></span></li>
@@ -70,43 +73,21 @@
           <li><a href="#software_defined_radio">Software Defined Radio</a><span id="playthrough_nav_totals_4"></span></li>
           <li><a href="#generic_tools">Generic Tools</a> <span id="playthrough_nav_totals_5"></span></li>
           <li><a href="#useful_cheatsheets">Useful Cheatsheets</a> <span id="playthrough_nav_totals_6"></span></li>
-          <hr>
-          <hr>
-          <li><a href="#Old_Yharnam">Old Yharnam</a> (Optional) <span id="playthrough_nav_totals_7"></span></li>
-          <li><a href="#Healing_Church_Workshop">Healing Church Workshop</a><span id="playthrough_nav_totals_8"></span></li>
-          <li><a href="#Cathedral_Ward_revisited">Cathedral Ward revisited</a> <span id="playthrough_nav_totals_9"></span></li>
-          <li><a href="#Hemwick_Charnel_Lane">Hemwick Charnel Lane</a> (Optional) <span id="playthrough_nav_totals_10"></span></li>
-          <li><a href="#Hypogean_Gaol">Hypogean Gaol</a> (Optional) <span id="playthrough_nav_totals_11"></span></li>
-          <li><a href="#Lecture_Building_1st_Floor">Lecture Building 1st Floor</a> (Optional) <span id="playthrough_nav_totals_12"></span></li>
-          <li><a href="#Nightmare_Frontier">Nightmare Frontier</a> (Optional) <span id="playthrough_nav_totals_13"></span></li>
-          <li><a href="#Forbidden_Woods">Forbidden Woods</a> <span id="playthrough_nav_totals_14"></span></li>
-          <li><a href="#Iosefkas_Clinic">Iosefka's Clinic</a> (Optional) <span id="playthrough_nav_totals_15"></span></li>
-          <li><a href="#Castle_Cainhurst">Castle Cainhurst</a> (Optional) <span id="playthrough_nav_totals_16"></span></li>
-          <li><a href="#Byrgenwerth">Byrgenwerth</a> <span id="playthrough_nav_totals_17"></span></li>
-          <li><a href="#Yahargul_Unseen_Village">Yahar'gul, Unseen Village</a> <span id="playthrough_nav_totals_18"></span></li>
-          <li><a href="#Upper_Cathedral_Ward">Upper Cathedral Ward</a> (Optional) <span id="playthrough_nav_totals_19"></span></li>
-          <li><a href="#Orphanage">Orphanage</a> (Optional) <span id="playthrough_nav_totals_20"></span></li>
-          <li><a href="#Lecture_Building_2nd_Floor">Lecture Building 2nd Floor</a> <span id="playthrough_nav_totals_21"></span></li>
-          <li><a href="#Nightmare_of_Mensis">Nightmare of Mensis</a> <span id="playthrough_nav_totals_22"></span></li>
-          <li><a href="#toh_dlc">The Old Hunters</a> <span id="playthrough_nav_totals_23"></span></li>
-          <li><a href="#hunters_nightmare">Hunter's Nightmare (DLC)</a> <span id="playthrough_nav_totals_24"></span></li>
-          <li><a href="#research_hall">Research Hall (DLC)</a> <span id="playthrough_nav_totals_25"></span></li>
-          <li><a href="#fishing_hamlet">Fishing Hamlet (DLC)</a> <span id="playthrough_nav_totals_26"></span></li>
-          <li><a href="#End_Game">End Game</a> <span id="playthrough_nav_totals_27"></span></li>
+
         </ul>
         <hr />
 
         <h3 id="images"><a href="#">Images</a> <span id="playthrough_totals_1"></span></h3>
         <ul>
           <!--<li data-id="playthrough_1_1">Die, or continue into <a href="#">Central Yharnam</a></li> -->
-          <li data-id="playthrough_1_1">exiftool <br> ex: <a href="https://exiftool.org/">[exiftool myfile]</a></li>
-          
-           <li data-id="playthrough_1_2">hexdump <br> ex: <a href="https://man7.org/linux/man-pages/man1/hexdump.1.html">[hexdump -C myfile]</a></li>
+          <li data-id="playthrough_1_1">exiftool</li>
+          <li data-id="playthrough_1_2">hexdump</li>
+          <li data-id="playthrough_1_3">strings</li>
+          <li data-id="playthrough_1_4">steganography</li>
         </ul>
 
         <h3 id="passwords"><a href="#">Passwords</a> <span id="playthrough_totals_2"></span></h3>
         <ul>
-          <!--<li data-id="playthrough_2_1">Collect starting gear from <a href="#">Messengers</a> on the stairs</li>-->
           <li data-id="playthrough_2_1">john the ripper</li>
           <li data-id="playthrough_2_2">hashcat</li>
           
@@ -115,7 +96,9 @@
         <h3 id="cryptography"><a href="#">Cryptography</a> <span id="playthrough_totals_3"></span></h3>
         <ul>
           <!--<li data-id="playthrough_3_1">Find <a href="#">Gilbert</a> and begin his quest line</li>-->
-          <li data-id="playthrough_3_1">ctf crypto for <a href="https://charcharbinks.com/post/ctf_crypto_for_beginners/">beginners</a></li>
+          <li data-id="playthrough_3_1">caesar cipher/rot13</a></li>
+          <li data-id="playthrough_3_2">substitution cipher</a></li>
+          <li data-id="playthrough_3_3">ctf crypto for beginners</a></li>
         </ul>
 
         <h3 id="software_defined_radio"><a href="#">Software Defined Radio</a> (Optional) <span id="playthrough_totals_4"></span></h3>
@@ -132,8 +115,8 @@
         <ul>
           <!--<li data-id="playthrough_5_1">Defeat <a href="#">Father Gascoigne</a></li>-->
           <li data-id="playthrough_5_1">strings</li>
-          <li data-id="playthrough_5_1">file</li>
-          <li data-id="playthrough_5_1">hex editor</li>
+          <li data-id="playthrough_5_2">file</li>
+          <li data-id="playthrough_5_3">hex editor</li>
         </ul>
 
         <h3 id="useful_cheat_cheets"><a href="#">Useful Cheat Sheets</a> <span id="playthrough_totals_6"></span></h3>
@@ -142,88 +125,75 @@
           <li data-id="playthrough_6_1">usefull <a href="https://gtfobins.github.io/</li">commands shell/exploits</a></li>
         </ul>
       </div>
-      <div class="tab-pane" id="tabChecklists">
-        <h2>Checklists<span id="checklist_overall_total"></span></h2>
+      <div class="tab-pane" id="tabImages">
+        <h2>Images<span id="checklist_overall_total"></span></h2>
         <ul>
-          <li><a href="#Hunters_Essence">Hunter's Essence</a> (Acquire all Weapons) <span id="checklist_nav_totals_1"></span></li>
+          <li><a href="#exiftool">exiftool/a> (Acquire all Weapons) <span id="checklist_nav_totals_1"></span></li>
           <li><a href="#Hunters_Craft">Hunter's Craft</a> (Acquire all Hunter Tools) <span id="checklist_nav_totals_2"></span></li>
         </ul>
 
         <hr />
 
-        <h3 id="Hunters_Essence">Hunter's Essence (Acquire all <a href="http://bloodborne.wiki.fextralife.com/Weapons">Weapons</a>) <span id="checklist_totals_1"></span></h3>
+        <h4 id="exiftool">Helpful commands<span id="checklist_totals_1"></span></h4>
         <h4>Trick Weapons</h4>
         <ul>
-          <li data-id="checklist_1_1"><a href="http://bloodborne.wiki.fextralife.com/Beast+Claw">Beast Claw</a> - <a href="http://bloodborne.wiki.fextralife.com/Ailing+Loran+Chalice">Ailing Loran Chalice</a></li>
-          <li data-id="checklist_1_2"><a href="http://bloodborne.wiki.fextralife.com/Blade+of+Mercy">Blade of Mercy</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 40,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Crow+Hunter+Badge">Crow Hunter Badge</a></li>
-          <li data-id="checklist_1_3"><a href="http://bloodborne.wiki.fextralife.com/Burial+Blade">Burial Blade</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 60,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after defeating <a href="http://bloodborne.wiki.fextralife.com/Gehrman%2C+The+First+Hunter">Gehrman, The First Hunter</a></li>
-          <li data-id="checklist_1_4"><a href="http://bloodborne.wiki.fextralife.com/Chikage">Chikage</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 50,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Badge">Cainhurst Badge</a></li>
-          <li data-id="checklist_1_5"><a href="http://bloodborne.wiki.fextralife.com/Hunter+Axe">Hunter Axe</a> - Acquired at the very beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or later purchased for 1100 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from them after acquiring the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
-          <li data-id="checklist_1_6"><a href="http://bloodborne.wiki.fextralife.com/Kirkhammer">Kirkhammer</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 3,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Sword+Hunter+Badge">Sword Hunter Badge</a></li>
-          <li data-id="checklist_1_7"><a href="http://bloodborne.wiki.fextralife.com/Logarius%27+Wheel">Logarius' Wheel</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 13,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Wheel+Hunter+Badge">Wheel Hunter Badge</a></li>
-          <li data-id="checklist_1_8"><a href="http://bloodborne.wiki.fextralife.com/Ludwig%27s+Holy+Blade">Ludwig's Holy Blade</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 20,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Radiant+Sword+Hunter+Badge">Radiant Sword Hunter Badge</a></li>
-          <li data-id="checklist_1_9"><a href="http://bloodborne.wiki.fextralife.com/Reiterpallasch">Reiterpallasch</a> - Obtained in a chest on the ground floor of <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Castle">Cainhurst Castle</a></li>
-          <li data-id="checklist_1_10"><a href="http://bloodborne.wiki.fextralife.com/Rifle+Spear">Rifle Spear</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 4,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Powder+Keg+Hunter+Badge">Powder Keg Hunter Badge</a> or obtained from body in <a href="http://bloodborne.wiki.fextralife.com/Old+Yharnam">Old Yharnam</a></li>
-          <li data-id="checklist_1_11"><a href="http://bloodborne.wiki.fextralife.com/Saw+Cleaver">Saw Cleaver</a> - Acquired at the beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or later purchased for 1000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from them after finding the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
-          <li data-id="checklist_1_12"><a href="http://bloodborne.wiki.fextralife.com/Saw+Spear">Saw Spear</a> - Found on body in <a href="http://bloodborne.wiki.fextralife.com/Central+Yharnam">Central Yharnam</a> or can be purchased for 1000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the Messengers after finding the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
-          <li data-id="checklist_1_13"><a href="http://bloodborne.wiki.fextralife.com/Stake+Driver">Stake Driver</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 8,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Powder+Keg+Hunter+Badge">Powder Keg Hunter Badge</a></li>
-          <li data-id="checklist_1_14"><a href="http://bloodborne.wiki.fextralife.com/Threaded+Cane">Threaded Cane</a> - Acquired at the beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or later purchased for 1200 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from them after finding the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
-          <li data-id="checklist_1_15"><a href="http://bloodborne.wiki.fextralife.com/Tonitrus">Tonitrus</a> - Found on a body in <a href="http://bloodborne.wiki.fextralife.com/Hypogean+Gaol">Hypogean Gaol</a> or can be purchased from <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 26,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining <a href="http://bloodborne.wiki.fextralife.com/Spark+Hunter+Badge">Spark Hunter Badge</a></li>
+          <li data-id="checklist_1_1">exiftool myfile</li>
+          
         </ul>
-        <h4>Trick Weapons (The Old Hunters DLC)</h4>
+        <h4>next tool</h4>
         <ul>
-          <li data-id="checklist_1_16"><a href="https://bloodborne.wiki.fextralife.com/Amygdalan+Arm">Amygdalan Arm</a></li>
-          <li data-id="checklist_1_17"><a href="https://bloodborne.wiki.fextralife.com/Beasthunter+Saif">Beasthunter Saif</a></li>
-          <li data-id="checklist_1_18"><a href="https://bloodborne.wiki.fextralife.com/Beast+Cutter">Beast Cutter</a></li>
-          <li data-id="checklist_1_19"><a href="https://bloodborne.wiki.fextralife.com/Bloodletter">Bloodletter</a></li>
-          <li data-id="checklist_1_20"><a href="https://bloodborne.wiki.fextralife.com/Boom+Hammer">Boom Hammer</a></li>
-          <li data-id="checklist_1_21"><a href="https://bloodborne.wiki.fextralife.com/Church+Pick">Church Pick</a></li>
-          <li data-id="checklist_1_22"><a href="https://bloodborne.wiki.fextralife.com/Holy+Moonlight+Sword">Holy Moonlight Sword</a></li>
-          <li data-id="checklist_1_23"><a href="https://bloodborne.wiki.fextralife.com/Kos+Parasite">Kos Parasite</a></li>
-          <li data-id="checklist_1_24"><a href="https://bloodborne.wiki.fextralife.com/Rakuyo">Rakuyo</a></li>
-          <li data-id="checklist_1_25"><a href="https://bloodborne.wiki.fextralife.com/Simon%27s+Bowblade">Simon's Bowblade</a></li>
-          <li data-id="checklist_1_26"><a href="https://bloodborne.wiki.fextralife.com/Whirligig+Saw">Whirligig Saw</a></li>
+          <li data-id="checklist_1_16"></li>
+          <li data-id="checklist_1_17"></li>
+          <li data-id="checklist_1_18"></li>
+          <li data-id="checklist_1_19"></li>
+          <li data-id="checklist_1_20"></li>
+          <li data-id="checklist_1_21"></li>
+          <li data-id="checklist_1_22"></li>
+          <li data-id="checklist_1_23"></li>
+          <li data-id="checklist_1_24"></li>
+          <li data-id="checklist_1_25"></li>
+          <li data-id="checklist_1_26"></li>
         </ul>
-        <h4>Firearms</h4>
+        <h4>next tool</h4>
         <ul>
-          <li data-id="checklist_1_27"><a href="http://bloodborne.wiki.fextralife.com/Cannon">Cannon</a> - Found in the rafters of a building inside the <a href="http://bloodborne.wiki.fextralife.com/Forbidden+Woods">Forbidden Woods</a></li>
-          <li data-id="checklist_1_28"><a href="http://bloodborne.wiki.fextralife.com/Evelyn">Evelyn</a> - Can be purchased for 16,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Badge">Cainhurst Badge</a> from joining the <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Vilebloods">Cainhurst Vilebloods</a>. Can also be found in a chest in <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Castle">Cainhurst Castle</a></li>
-          <li data-id="checklist_1_29"><a href="http://bloodborne.wiki.fextralife.com/Flamesprayer">Flamesprayer</a> - Acquired from <a href="http://bloodborne.wiki.fextralife.com/Gilbert">Gilbert</a> after entering the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> or can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 8,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining <a href="http://bloodborne.wiki.fextralife.com/Radiant+Sword+Hunter+Badge">Radiant Sword Hunter Badge</a></li>
-          <li data-id="checklist_1_30"><a href="http://bloodborne.wiki.fextralife.com/Hunter+Blunderbuss">Hunter Blunderbuss</a> - Acquired at the very beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or can be purchased later from them for 1,700 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
-          <li data-id="checklist_1_31"><a href="http://bloodborne.wiki.fextralife.com/Hunter+Pistol">Hunter Pistol</a> - Acquired at the very beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or can be purchased later from them for 1,600 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
-          <li data-id="checklist_1_32"><a href="http://bloodborne.wiki.fextralife.com/Hunter%27s+Torch">Hunter's Torch</a> - Found in <a href="http://bloodborne.wiki.fextralife.com/Old+Yharnam">Old Yharnam</a> on a corpse</li>
-          <li data-id="checklist_1_33"><a href="http://bloodborne.wiki.fextralife.com/Ludwig%27s+Rifle">Ludwig's Rifle</a> - Can be purchased for 10,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the </li>
-          <li data-id="checklist_1_34"><a href="https://bloodborne.wiki.fextralife.com/Repeating+Pistol">Repeating Pistol</a> - Can be purchased for 3,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Radiant+Sword+Hunter+Badge">Radiant Sword Hunter Badge</a></li>
-          <li data-id="checklist_1_35"><a href="http://bloodborne.wiki.fextralife.com/Rosmarinus">Rosmarinus</a> - Can be purchased for 60,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Cosmic+Eye+Watcher+Badge">Cosmic Eye Watcher Badge</a></li>
-          <li data-id="checklist_1_36"><a href="http://bloodborne.wiki.fextralife.com/Torch">Torch</a> - Found in <a href="http://bloodborne.wiki.fextralife.com/Central+Yarnham">Central Yarnham</a> on a corpse</li>
-          <li data-id="checklist_1_37"><a href="http://bloodborne.wiki.fextralife.com/Wooden+Shield">Wooden Shield</a> - Found in <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> on a corpse</li>
+          <li data-id="checklist_1_27"></li>
+          <li data-id="checklist_1_28"></li>
+          <li data-id="checklist_1_29"></li>
+          <li data-id="checklist_1_30"></li>
+          <li data-id="checklist_1_31"></li>
+          <li data-id="checklist_1_32"></li>
+          <li data-id="checklist_1_33"></li>
+          <li data-id="checklist_1_34"></li>
+          <li data-id="checklist_1_35"></li>
+          <li data-id="checklist_1_36"></li>
+          <li data-id="checklist_1_37"></li>
         </ul>
-        <h4>Firearms (The Old Hunters DLC)</h4>
+        <h4>next tool</h4>
         <ul>
-          <li data-id="checklist_1_38"><a href="https://bloodborne.wiki.fextralife.com/Church+Cannon">Church Cannon</a></li>
-          <li data-id="checklist_1_39"><a href="https://bloodborne.wiki.fextralife.com/Fist+of+Gratia">Fist of Gratia</a></li>
-          <li data-id="checklist_1_40"><a href="https://bloodborne.wiki.fextralife.com/Gatling+Gun">Gatling Gun</a></li>
-          <li data-id="checklist_1_41"><a href="https://bloodborne.wiki.fextralife.com/Piercing+Rifle">Piercing Rifle</a></li>
-          <li data-id="checklist_1_42"><a href="https://bloodborne.wiki.fextralife.com/Loch+Shield">Loch Shield</a></li>
+          <li data-id="checklist_1_38"></li>
+          <li data-id="checklist_1_39"></li>
+          <li data-id="checklist_1_40"></li>
+          <li data-id="checklist_1_41"></li>
+          <li data-id="checklist_1_42"></li>
         </ul>
 
-        <h3 id="Hunters_Craft">Hunter's Craft (Acquire all <a href="http://bloodborne.wiki.fextralife.com/Hunter+Tools">Hunter Tools</a>) <span id="checklist_totals_2"></span></h3>
-        <h4>Hunter Tools</h4>
+        <h3 id="Hunters_Craft">next<span id="checklist_totals_2"></span></h3>
+        <h4>next tool</h4>
         <ul>
-          <li data-id="checklist_2_1"><a href="http://bloodborne.wiki.fextralife.com/Old+Hunter+Bone">Old Hunter Bone</a> - Found near a tombstone in the <a href="http://bloodborne.wiki.fextralife.com/Old+Abandoned+Workshop">Old Abandoned Workshop</a></li>
-          <li data-id="checklist_2_2"><a href="http://bloodborne.wiki.fextralife.com/Beast+Roar">Beast Roar</a> - In a house near the hound cages in the <a href="http://bloodborne.wiki.fextralife.com/Forbidden+Woods">Forbidden Woods</a></li>
-          <li data-id="checklist_2_3"><a href="http://bloodborne.wiki.fextralife.com/Messenger%27s+Gift">Messenger's Gift</a> - <a href="http://bloodborne.wiki.fextralife.com/Nightmare+Frontier">Nightmare Frontier</a></li>
-          <li data-id="checklist_2_4"><a href="http://bloodborne.wiki.fextralife.com/Executioner%27s+Gloves">Executioner's Gloves</a> - <a href="http://bloodborne.wiki.fextralife.com/Forsaken+Castle+Cainhurst">Forsaken Castle Cainhurst</a> library</li>
-          <li data-id="checklist_2_5"><a href="http://bloodborne.wiki.fextralife.com/Empty+Phantasm+Shell">Empty Phantasm Shell</a> - In a chest close to the entrance of the lunarium in <a href="http://bloodborne.wiki.fextralife.com/Byrgenwerth">Byrgenwerth</a></li>
-          <li data-id="checklist_2_6"><a href="http://bloodborne.wiki.fextralife.com/Tiny+Tonitrus">Tiny Tonitrus</a> - <a href="http://bloodborne.wiki.fextralife.com/Yahar%27gul%2C+Unseen+Village">Yahar'gul, Unseen Village</a>, Chapel Lantern</li>
-          <li data-id="checklist_2_7"><a href="http://bloodborne.wiki.fextralife.com/Choir+Bell">Choir Bell</a> - <a href="http://bloodborne.wiki.fextralife.com/Mergo%27s+Loft+Middle">Mergo's Loft Middle</a></li>
-          <li data-id="checklist_2_8"><a href="http://bloodborne.wiki.fextralife.com/Augur+of+Ebrietas">Augur of Ebrietas</a> - <a href="http://bloodborne.wiki.fextralife.com/Lecture+Building">Lecture Building</a></li>
-          <li data-id="checklist_2_9"><a href="http://bloodborne.wiki.fextralife.com/A+Call+Beyond">A Call Beyond</a> - <a href="http://bloodborne.wiki.fextralife.com/Upper+Cathedral+Ward">Upper Cathedral Ward</a>, after you defeat the <a href="http://bloodborne.wiki.fextralife.com/Celestial+Emissary">Celestial Emissary</a></li>
+          <li data-id="checklist_2_1"></li>
+          <li data-id="checklist_2_2"></li>
+          <li data-id="checklist_2_3"></li>
+          <li data-id="checklist_2_4"></li>
+          <li data-id="checklist_2_5"></li>
+          <li data-id="checklist_2_6"></li>
+          <li data-id="checklist_2_7"></li>
+          <li data-id="checklist_2_8"></li>
+          <li data-id="checklist_2_9"></li>
         </ul>
-        <h4>Hunter Tools (The Old Hunters DLC)</h4>
+        <h4>next</h4>
         <ul>
-          <li data-id="checklist_2_10"><a href="https://bloodborne.wiki.fextralife.com/Blacksky+Eye">Blacksky Eye</a></li>
-          <li data-id="checklist_2_11"><a href="https://bloodborne.wiki.fextralife.com/Accursed+Brew">Accursed Brew</a></li>
+          <li data-id="checklist_2_10"></li>
+          <li data-id="checklist_2_11"></li>
         </ul>
       </div>
       <div class="tab-pane" id="tabSets">

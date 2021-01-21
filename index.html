@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>CTF Checklist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CTF/Hackfest checklist">
+  <meta name="author" content="orangepeelbeef & geekiespice">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/jstorage.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>var profilesKey = 'bloodborne_profiles';</script>
+  <script src="js/main.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66576837-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <h1>CTF Checklist</h1>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tabPlaythrough" data-toggle="tab">Playthrough</a></li>
+          <li><a href="#tabChecklists" data-toggle="tab">Checklists</a></li>
+          <li><a href="#tabSets" data-toggle="tab">Armor by sets</a></li>
+          <li><a href="#tabInformation" data-toggle="tab">Information</a></li>
+          <li><a href="#tabHelp" data-toggle="tab">Help</a></li>
+        </ul>
+        <div class="profile" style="float: right;">
+          <div class="input-append">
+            <select id="profiles">
+            </select>
+            <button class="btn" type="button" id="profileAdd">Add</button>
+            <button class="btn" type="button" id="profileEdit">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="intro">
+      <p>
+        The following is a checklist and set of information for use when playing Bloodborne. If this is your first time visiting this page please check out the Help section.
+        This checklist was created by using <a href="https://github.com/smcnabb">Stephen McNabb</a>'s Dark Soul Cheat Sheet code for use with <a href="http://bloodborne.wiki.fextralife.com/Game+Progress+Route">Fextralife's Game Progress Route.</a>
+      </p>
+      <p>
+        <em>Warning: Contains Spoilers!</em>
+      </p>
+    </div>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="tabPlaythrough">
+        <h2>Hackthrough Checklist <span id="playthrough_overall_total"></span></h2>
+        <ul>
+          <li><a href="#images">Images</a> <span id="playthrough_nav_totals_1"></span></li>
+          <li><a href="#passwords">Passwords</a> <span id="playthrough_nav_totals_2"></span></li>
+          <li><a href="#cryptography">Cryptography</a> <span id="playthrough_nav_totals_3"></span></li>
+          <li><a href="#software_defined_radio">Software Defined Radio</a><span id="playthrough_nav_totals_4"></span></li>
+          <li><a href="#generic_tools">Generic Tools</a> <span id="playthrough_nav_totals_5"></span></li>
+          <li><a href="#useful_cheatsheets">Useful Cheatsheets</a> <span id="playthrough_nav_totals_6"></span></li>
+          <hr>
+          <hr>
+          <li><a href="#Old_Yharnam">Old Yharnam</a> (Optional) <span id="playthrough_nav_totals_7"></span></li>
+          <li><a href="#Healing_Church_Workshop">Healing Church Workshop</a><span id="playthrough_nav_totals_8"></span></li>
+          <li><a href="#Cathedral_Ward_revisited">Cathedral Ward revisited</a> <span id="playthrough_nav_totals_9"></span></li>
+          <li><a href="#Hemwick_Charnel_Lane">Hemwick Charnel Lane</a> (Optional) <span id="playthrough_nav_totals_10"></span></li>
+          <li><a href="#Hypogean_Gaol">Hypogean Gaol</a> (Optional) <span id="playthrough_nav_totals_11"></span></li>
+          <li><a href="#Lecture_Building_1st_Floor">Lecture Building 1st Floor</a> (Optional) <span id="playthrough_nav_totals_12"></span></li>
+          <li><a href="#Nightmare_Frontier">Nightmare Frontier</a> (Optional) <span id="playthrough_nav_totals_13"></span></li>
+          <li><a href="#Forbidden_Woods">Forbidden Woods</a> <span id="playthrough_nav_totals_14"></span></li>
+          <li><a href="#Iosefkas_Clinic">Iosefka's Clinic</a> (Optional) <span id="playthrough_nav_totals_15"></span></li>
+          <li><a href="#Castle_Cainhurst">Castle Cainhurst</a> (Optional) <span id="playthrough_nav_totals_16"></span></li>
+          <li><a href="#Byrgenwerth">Byrgenwerth</a> <span id="playthrough_nav_totals_17"></span></li>
+          <li><a href="#Yahargul_Unseen_Village">Yahar'gul, Unseen Village</a> <span id="playthrough_nav_totals_18"></span></li>
+          <li><a href="#Upper_Cathedral_Ward">Upper Cathedral Ward</a> (Optional) <span id="playthrough_nav_totals_19"></span></li>
+          <li><a href="#Orphanage">Orphanage</a> (Optional) <span id="playthrough_nav_totals_20"></span></li>
+          <li><a href="#Lecture_Building_2nd_Floor">Lecture Building 2nd Floor</a> <span id="playthrough_nav_totals_21"></span></li>
+          <li><a href="#Nightmare_of_Mensis">Nightmare of Mensis</a> <span id="playthrough_nav_totals_22"></span></li>
+          <li><a href="#toh_dlc">The Old Hunters</a> <span id="playthrough_nav_totals_23"></span></li>
+          <li><a href="#hunters_nightmare">Hunter's Nightmare (DLC)</a> <span id="playthrough_nav_totals_24"></span></li>
+          <li><a href="#research_hall">Research Hall (DLC)</a> <span id="playthrough_nav_totals_25"></span></li>
+          <li><a href="#fishing_hamlet">Fishing Hamlet (DLC)</a> <span id="playthrough_nav_totals_26"></span></li>
+          <li><a href="#End_Game">End Game</a> <span id="playthrough_nav_totals_27"></span></li>
+        </ul>
+        <hr />
+
+        <h3 id="images"><a href="#">Images</a> <span id="playthrough_totals_1"></span></h3>
+        <ul>
+          <!--<li data-id="playthrough_1_1">Die, or continue into <a href="#">Central Yharnam</a></li> -->
+          <li data-id="playthrough_1_1">exiftool <br> ex: <a href="https://exiftool.org/">[exiftool myfile]</a></li>
+          
+           <li data-id="playthrough_1_2">hexdump <br> ex: <a href="https://man7.org/linux/man-pages/man1/hexdump.1.html">[hexdump -C myfile]</a></li>
+        </ul>
+
+        <h3 id="passwords"><a href="#">Passwords</a> <span id="playthrough_totals_2"></span></h3>
+        <ul>
+          <!--<li data-id="playthrough_2_1">Collect starting gear from <a href="#">Messengers</a> on the stairs</li>-->
+          <li data-id="playthrough_2_1">john the ripper</li>
+          <li data-id="playthrough_2_2">hashcat</li>
+          
+        </ul>
+
+        <h3 id="cryptography"><a href="#">Cryptography</a> <span id="playthrough_totals_3"></span></h3>
+        <ul>
+          <!--<li data-id="playthrough_3_1">Find <a href="#">Gilbert</a> and begin his quest line</li>-->
+          <li data-id="playthrough_3_1">ctf crypto for <a href="https://charcharbinks.com/post/ctf_crypto_for_beginners/">beginners</a></li>
+        </ul>
+
+        <h3 id="software_defined_radio"><a href="#">Software Defined Radio</a> (Optional) <span id="playthrough_totals_4"></span></h3>
+        <ul>
+          <!--<li data-id="playthrough_4_1">Defeat <a href="#">Cleric Beast</a></li>-->
+          <li data-id="playthrough_4_1">fldigi</li>
+          <li data-id="playthrough_4_2">gqrx</li>
+          <li data-id="playthrough_4_3">multimon-ng</li>
+
+
+        </ul>
+
+        <h3 id="generic_tools"><a href="#">Generic Tools</a> <span id="playthrough_totals_5"></span></h3>
+        <ul>
+          <!--<li data-id="playthrough_5_1">Defeat <a href="#">Father Gascoigne</a></li>-->
+          <li data-id="playthrough_5_1">strings</li>
+          <li data-id="playthrough_5_1">file</li>
+          <li data-id="playthrough_5_1">hex editor</li>
+        </ul>
+
+        <h3 id="useful_cheat_cheets"><a href="#">Useful Cheat Sheets</a> <span id="playthrough_totals_6"></span></h3>
+        <ul>
+          <!--<li data-id="playthrough_6_1">Meet <a href="#">Alfred</a></li>-->
+          <li data-id="playthrough_6_1">usefull <a href="https://gtfobins.github.io/</li">commands shell/exploits</a></li>
+        </ul>
+      </div>
+      <div class="tab-pane" id="tabChecklists">
+        <h2>Checklists<span id="checklist_overall_total"></span></h2>
+        <ul>
+          <li><a href="#Hunters_Essence">Hunter's Essence</a> (Acquire all Weapons) <span id="checklist_nav_totals_1"></span></li>
+          <li><a href="#Hunters_Craft">Hunter's Craft</a> (Acquire all Hunter Tools) <span id="checklist_nav_totals_2"></span></li>
+        </ul>
+
+        <hr />
+
+        <h3 id="Hunters_Essence">Hunter's Essence (Acquire all <a href="http://bloodborne.wiki.fextralife.com/Weapons">Weapons</a>) <span id="checklist_totals_1"></span></h3>
+        <h4>Trick Weapons</h4>
+        <ul>
+          <li data-id="checklist_1_1"><a href="http://bloodborne.wiki.fextralife.com/Beast+Claw">Beast Claw</a> - <a href="http://bloodborne.wiki.fextralife.com/Ailing+Loran+Chalice">Ailing Loran Chalice</a></li>
+          <li data-id="checklist_1_2"><a href="http://bloodborne.wiki.fextralife.com/Blade+of+Mercy">Blade of Mercy</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 40,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Crow+Hunter+Badge">Crow Hunter Badge</a></li>
+          <li data-id="checklist_1_3"><a href="http://bloodborne.wiki.fextralife.com/Burial+Blade">Burial Blade</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 60,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after defeating <a href="http://bloodborne.wiki.fextralife.com/Gehrman%2C+The+First+Hunter">Gehrman, The First Hunter</a></li>
+          <li data-id="checklist_1_4"><a href="http://bloodborne.wiki.fextralife.com/Chikage">Chikage</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 50,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Badge">Cainhurst Badge</a></li>
+          <li data-id="checklist_1_5"><a href="http://bloodborne.wiki.fextralife.com/Hunter+Axe">Hunter Axe</a> - Acquired at the very beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or later purchased for 1100 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from them after acquiring the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_6"><a href="http://bloodborne.wiki.fextralife.com/Kirkhammer">Kirkhammer</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 3,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Sword+Hunter+Badge">Sword Hunter Badge</a></li>
+          <li data-id="checklist_1_7"><a href="http://bloodborne.wiki.fextralife.com/Logarius%27+Wheel">Logarius' Wheel</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 13,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Wheel+Hunter+Badge">Wheel Hunter Badge</a></li>
+          <li data-id="checklist_1_8"><a href="http://bloodborne.wiki.fextralife.com/Ludwig%27s+Holy+Blade">Ludwig's Holy Blade</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 20,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Radiant+Sword+Hunter+Badge">Radiant Sword Hunter Badge</a></li>
+          <li data-id="checklist_1_9"><a href="http://bloodborne.wiki.fextralife.com/Reiterpallasch">Reiterpallasch</a> - Obtained in a chest on the ground floor of <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Castle">Cainhurst Castle</a></li>
+          <li data-id="checklist_1_10"><a href="http://bloodborne.wiki.fextralife.com/Rifle+Spear">Rifle Spear</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 4,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Powder+Keg+Hunter+Badge">Powder Keg Hunter Badge</a> or obtained from body in <a href="http://bloodborne.wiki.fextralife.com/Old+Yharnam">Old Yharnam</a></li>
+          <li data-id="checklist_1_11"><a href="http://bloodborne.wiki.fextralife.com/Saw+Cleaver">Saw Cleaver</a> - Acquired at the beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or later purchased for 1000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from them after finding the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_12"><a href="http://bloodborne.wiki.fextralife.com/Saw+Spear">Saw Spear</a> - Found on body in <a href="http://bloodborne.wiki.fextralife.com/Central+Yharnam">Central Yharnam</a> or can be purchased for 1000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the Messengers after finding the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_13"><a href="http://bloodborne.wiki.fextralife.com/Stake+Driver">Stake Driver</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 8,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Powder+Keg+Hunter+Badge">Powder Keg Hunter Badge</a></li>
+          <li data-id="checklist_1_14"><a href="http://bloodborne.wiki.fextralife.com/Threaded+Cane">Threaded Cane</a> - Acquired at the beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or later purchased for 1200 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from them after finding the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_15"><a href="http://bloodborne.wiki.fextralife.com/Tonitrus">Tonitrus</a> - Found on a body in <a href="http://bloodborne.wiki.fextralife.com/Hypogean+Gaol">Hypogean Gaol</a> or can be purchased from <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 26,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining <a href="http://bloodborne.wiki.fextralife.com/Spark+Hunter+Badge">Spark Hunter Badge</a></li>
+        </ul>
+        <h4>Trick Weapons (The Old Hunters DLC)</h4>
+        <ul>
+          <li data-id="checklist_1_16"><a href="https://bloodborne.wiki.fextralife.com/Amygdalan+Arm">Amygdalan Arm</a></li>
+          <li data-id="checklist_1_17"><a href="https://bloodborne.wiki.fextralife.com/Beasthunter+Saif">Beasthunter Saif</a></li>
+          <li data-id="checklist_1_18"><a href="https://bloodborne.wiki.fextralife.com/Beast+Cutter">Beast Cutter</a></li>
+          <li data-id="checklist_1_19"><a href="https://bloodborne.wiki.fextralife.com/Bloodletter">Bloodletter</a></li>
+          <li data-id="checklist_1_20"><a href="https://bloodborne.wiki.fextralife.com/Boom+Hammer">Boom Hammer</a></li>
+          <li data-id="checklist_1_21"><a href="https://bloodborne.wiki.fextralife.com/Church+Pick">Church Pick</a></li>
+          <li data-id="checklist_1_22"><a href="https://bloodborne.wiki.fextralife.com/Holy+Moonlight+Sword">Holy Moonlight Sword</a></li>
+          <li data-id="checklist_1_23"><a href="https://bloodborne.wiki.fextralife.com/Kos+Parasite">Kos Parasite</a></li>
+          <li data-id="checklist_1_24"><a href="https://bloodborne.wiki.fextralife.com/Rakuyo">Rakuyo</a></li>
+          <li data-id="checklist_1_25"><a href="https://bloodborne.wiki.fextralife.com/Simon%27s+Bowblade">Simon's Bowblade</a></li>
+          <li data-id="checklist_1_26"><a href="https://bloodborne.wiki.fextralife.com/Whirligig+Saw">Whirligig Saw</a></li>
+        </ul>
+        <h4>Firearms</h4>
+        <ul>
+          <li data-id="checklist_1_27"><a href="http://bloodborne.wiki.fextralife.com/Cannon">Cannon</a> - Found in the rafters of a building inside the <a href="http://bloodborne.wiki.fextralife.com/Forbidden+Woods">Forbidden Woods</a></li>
+          <li data-id="checklist_1_28"><a href="http://bloodborne.wiki.fextralife.com/Evelyn">Evelyn</a> - Can be purchased for 16,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Badge">Cainhurst Badge</a> from joining the <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Vilebloods">Cainhurst Vilebloods</a>. Can also be found in a chest in <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Castle">Cainhurst Castle</a></li>
+          <li data-id="checklist_1_29"><a href="http://bloodborne.wiki.fextralife.com/Flamesprayer">Flamesprayer</a> - Acquired from <a href="http://bloodborne.wiki.fextralife.com/Gilbert">Gilbert</a> after entering the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> or can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 8,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining <a href="http://bloodborne.wiki.fextralife.com/Radiant+Sword+Hunter+Badge">Radiant Sword Hunter Badge</a></li>
+          <li data-id="checklist_1_30"><a href="http://bloodborne.wiki.fextralife.com/Hunter+Blunderbuss">Hunter Blunderbuss</a> - Acquired at the very beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or can be purchased later from them for 1,700 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_31"><a href="http://bloodborne.wiki.fextralife.com/Hunter+Pistol">Hunter Pistol</a> - Acquired at the very beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or can be purchased later from them for 1,600 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_32"><a href="http://bloodborne.wiki.fextralife.com/Hunter%27s+Torch">Hunter's Torch</a> - Found in <a href="http://bloodborne.wiki.fextralife.com/Old+Yharnam">Old Yharnam</a> on a corpse</li>
+          <li data-id="checklist_1_33"><a href="http://bloodborne.wiki.fextralife.com/Ludwig%27s+Rifle">Ludwig's Rifle</a> - Can be purchased for 10,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the </li>
+          <li data-id="checklist_1_34"><a href="https://bloodborne.wiki.fextralife.com/Repeating+Pistol">Repeating Pistol</a> - Can be purchased for 3,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Radiant+Sword+Hunter+Badge">Radiant Sword Hunter Badge</a></li>
+          <li data-id="checklist_1_35"><a href="http://bloodborne.wiki.fextralife.com/Rosmarinus">Rosmarinus</a> - Can be purchased for 60,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Cosmic+Eye+Watcher+Badge">Cosmic Eye Watcher Badge</a></li>
+          <li data-id="checklist_1_36"><a href="http://bloodborne.wiki.fextralife.com/Torch">Torch</a> - Found in <a href="http://bloodborne.wiki.fextralife.com/Central+Yarnham">Central Yarnham</a> on a corpse</li>
+          <li data-id="checklist_1_37"><a href="http://bloodborne.wiki.fextralife.com/Wooden+Shield">Wooden Shield</a> - Found in <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> on a corpse</li>
+        </ul>
+        <h4>Firearms (The Old Hunters DLC)</h4>
+        <ul>
+          <li data-id="checklist_1_38"><a href="https://bloodborne.wiki.fextralife.com/Church+Cannon">Church Cannon</a></li>
+          <li data-id="checklist_1_39"><a href="https://bloodborne.wiki.fextralife.com/Fist+of+Gratia">Fist of Gratia</a></li>
+          <li data-id="checklist_1_40"><a href="https://bloodborne.wiki.fextralife.com/Gatling+Gun">Gatling Gun</a></li>
+          <li data-id="checklist_1_41"><a href="https://bloodborne.wiki.fextralife.com/Piercing+Rifle">Piercing Rifle</a></li>
+          <li data-id="checklist_1_42"><a href="https://bloodborne.wiki.fextralife.com/Loch+Shield">Loch Shield</a></li>
+        </ul>
+
+        <h3 id="Hunters_Craft">Hunter's Craft (Acquire all <a href="http://bloodborne.wiki.fextralife.com/Hunter+Tools">Hunter Tools</a>) <span id="checklist_totals_2"></span></h3>
+        <h4>Hunter Tools</h4>
+        <ul>
+          <li data-id="checklist_2_1"><a href="http://bloodborne.wiki.fextralife.com/Old+Hunter+Bone">Old Hunter Bone</a> - Found near a tombstone in the <a href="http://bloodborne.wiki.fextralife.com/Old+Abandoned+Workshop">Old Abandoned Workshop</a></li>
+          <li data-id="checklist_2_2"><a href="http://bloodborne.wiki.fextralife.com/Beast+Roar">Beast Roar</a> - In a house near the hound cages in the <a href="http://bloodborne.wiki.fextralife.com/Forbidden+Woods">Forbidden Woods</a></li>
+          <li data-id="checklist_2_3"><a href="http://bloodborne.wiki.fextralife.com/Messenger%27s+Gift">Messenger's Gift</a> - <a href="http://bloodborne.wiki.fextralife.com/Nightmare+Frontier">Nightmare Frontier</a></li>
+          <li data-id="checklist_2_4"><a href="http://bloodborne.wiki.fextralife.com/Executioner%27s+Gloves">Executioner's Gloves</a> - <a href="http://bloodborne.wiki.fextralife.com/Forsaken+Castle+Cainhurst">Forsaken Castle Cainhurst</a> library</li>
+          <li data-id="checklist_2_5"><a href="http://bloodborne.wiki.fextralife.com/Empty+Phantasm+Shell">Empty Phantasm Shell</a> - In a chest close to the entrance of the lunarium in <a href="http://bloodborne.wiki.fextralife.com/Byrgenwerth">Byrgenwerth</a></li>
+          <li data-id="checklist_2_6"><a href="http://bloodborne.wiki.fextralife.com/Tiny+Tonitrus">Tiny Tonitrus</a> - <a href="http://bloodborne.wiki.fextralife.com/Yahar%27gul%2C+Unseen+Village">Yahar'gul, Unseen Village</a>, Chapel Lantern</li>
+          <li data-id="checklist_2_7"><a href="http://bloodborne.wiki.fextralife.com/Choir+Bell">Choir Bell</a> - <a href="http://bloodborne.wiki.fextralife.com/Mergo%27s+Loft+Middle">Mergo's Loft Middle</a></li>
+          <li data-id="checklist_2_8"><a href="http://bloodborne.wiki.fextralife.com/Augur+of+Ebrietas">Augur of Ebrietas</a> - <a href="http://bloodborne.wiki.fextralife.com/Lecture+Building">Lecture Building</a></li>
+          <li data-id="checklist_2_9"><a href="http://bloodborne.wiki.fextralife.com/A+Call+Beyond">A Call Beyond</a> - <a href="http://bloodborne.wiki.fextralife.com/Upper+Cathedral+Ward">Upper Cathedral Ward</a>, after you defeat the <a href="http://bloodborne.wiki.fextralife.com/Celestial+Emissary">Celestial Emissary</a></li>
+        </ul>
+        <h4>Hunter Tools (The Old Hunters DLC)</h4>
+        <ul>
+          <li data-id="checklist_2_10"><a href="https://bloodborne.wiki.fextralife.com/Blacksky+Eye">Blacksky Eye</a></li>
+          <li data-id="checklist_2_11"><a href="https://bloodborne.wiki.fextralife.com/Accursed+Brew">Accursed Brew</a></li>
+        </ul>
+      </div>
+      <div class="tab-pane" id="tabSets">
+        <h2>Checklist for all armor pieces by sets <span id="sets_overall_total"></span></h2>
+        <h4>Base game</h4>
+        <ul>
+          <li><a href="#AriannaShoes">Arianna's Shoes</a> <span id=sets_nav_totals_1></span></li>
+          <li><a href="#AshenHunterSet">Ashen Hunter Set</a> <span id=sets_nav_totals_2></span></li>
+          <li><a href="#BlackChurchSet">Black Church Set</a> <span id=sets_nav_totals_3></span></li>
+          <li><a href="#BoneAshSet">Bone Ash Set</a> <span id=sets_nav_totals_4></span></li>
+          <li><a href="#CainhurstSet">Cainhurst Set</a> <span id=sets_nav_totals_5></span></li>
+          <li><a href="#CharredHunterSet">Charred Hunter Set</a> <span id=sets_nav_totals_6></span></li>
+          <li><a href="#ChoirSet">Choir Set</a> <span id=sets_nav_totals_7></span></li>
+          <li><a href="#CrowfeatherSet">Crowfeather Set</a> <span id=sets_nav_totals_8></span></li>
+          <li><a href="#CrownOfIllusions">Crown Of Illusions</a> <span id=sets_nav_totals_9></span></li>
+          <li><a href="#DollSet">Doll Set</a> <span id=sets_nav_totals_10></span></li>
+          <li><a href="#ExecutionerSet">Executioner Set</a> <span id=sets_nav_totals_11></span></li>
+          <li><a href="#ForeignSet">Foreign Set</a> <span id=sets_nav_totals_12></span></li>
+          <li><a href="#GascoigneSet">Gascoigne's Set</a> <span id=sets_nav_totals_13></span></li>
+          <li><a href="#GehrmanSet">Gehrman's Set</a> <span id=sets_nav_totals_14></span></li>
+          <li><a href="#GraveguardSet">Graveguard Set</a> <span id=sets_nav_totals_15></span></li>
+          <li><a href="#HenrykHunterSet">Henryk's Hunter Set</a> <span id=sets_nav_totals_16></span></li>
+          <li><a href="#HunterSet">Hunter Set</a> <span id=sets_nav_totals_17></span></li>
+          <li><a href="#KnightSet">Knight's Set</a> <span id=sets_nav_totals_18></span></li>
+          <li><a href="#MadmanSet">Madman Set</a> <span id=sets_nav_totals_19></span></li>
+          <li><a href="#MensisCage">Mensis Cage</a> <span id=sets_nav_totals_20></span></li>
+          <li><a href="#NobleDress">Noble Dress</a> <span id=sets_nav_totals_21></span></li>
+          <li><a href="#ShabbySet">Shabby Set</a> <span id=sets_nav_totals_22></span></li>
+          <li><a href="#StudentSet">Student Set</a> <span id=sets_nav_totals_23></span></li>
+          <li><a href="#TombProspectorSet">Tomb Prospector Set</a> <span id=sets_nav_totals_24></span></li>
+          <li><a href="#WhiteChurchSet">White Church Set</a> <span id=sets_nav_totals_25></span></li>
+          <li><a href="#YaharGulSet">Yahar'Gul Set</a> <span id=sets_nav_totals_26></span></li>
+          <li><a href="#YharnamHunterSet">Yharnam Hunter Set</a> <span id=sets_nav_totals_27></span></li>
+        </ul>
+        <h4>The Old Hunters DLC</h4>
+        <ul>
+          <li><a href="#ButcherSet">Butcher Set</a> <span id=sets_nav_totals_28></span></li>
+          <li><a href="#BradorSet">Brador's Set</a> <span id=sets_nav_totals_29></span></li>
+          <li><a href="#ConstableSet">Constable Set</a> <span id=sets_nav_totals_30></span></li>
+          <li><a href="#DecorativeOldHunterSet">Decorative Old Hunter Set</a> <span id=sets_nav_totals_31></span></li>
+          <li><a href="#EnlargedHead">Enlarged Head</a> <span id=sets_nav_totals_32></span></li>
+          <li><a href="#HarrowedSet">Harrowed Set</a> <span id=sets_nav_totals_33></span></li>
+          <li><a href="#MariaHunterSet">Maria Hunter Set</a> <span id=sets_nav_totals_34></span></li>
+          <li><a href="#OldHunterSet">Old Hunter Set</a> <span id=sets_nav_totals_35></span></li>
+          <li><a href="#YamamuraSet">Yamamura Set</a> <span id=sets_nav_totals_36></span></li>
+        </ul>
+        <hr />
+        <h3>Base game sets</h3>
+        <h4 id="AriannaShoes"><a href="https://bloodborne.wiki.fextralife.com/Arianna%27s+Shoes">Arianna's Shoes</a> <span id="sets_totals_1"></span></h4>
+        <ul>
+          <li data-id="sets_1_1"><a href="https://bloodborne.wiki.fextralife.com/Arianna%27s+Shoes">Arianna's Shoes</a></li>
+        </ul>
+        <h4 id="AshenHunterSet"><a href="https://bloodborne.wiki.fextralife.com/Ashen+Hunter+Set">Ashen Hunter Set</a> <span id="sets_totals_2"></span></h4>
+        <ul>
+          <li data-id="sets_2_1"><a href="https://bloodborne.wiki.fextralife.com/Grey+Wolf+Cap">Grey Wolf Cap</a></li>
+          <li data-id="sets_2_2"><a href="https://bloodborne.wiki.fextralife.com/Ashen+Hunter+Garb">Ashen Hunter Garb</a></li>
+          <li data-id="sets_2_3"><a href="https://bloodborne.wiki.fextralife.com/Ashen+Hunter+Gloves">Ashen Hunter Gloves</a></li>
+          <li data-id="sets_2_4"><a href="https://bloodborne.wiki.fextralife.com/Ashen+Hunter+Trousers">Ashen Hunter Trousers</a></li>
+        </ul>
+        <h4 id="BlackChurchSet"><a href="https://bloodborne.wiki.fextralife.com/Black+Church+Set">Black Church Set</a> <span id="sets_totals_3"></span></h4>
+        <ul>
+          <li data-id="sets_3_1"><a href="https://bloodborne.wiki.fextralife.com/Black+Church+Hat">Black Church Hat</a></li>
+          <li data-id="sets_3_2"><a href="https://bloodborne.wiki.fextralife.com/Black+Church+Garb">Black Church Garb</a></li>
+          <li data-id="sets_3_3"><a href="https://bloodborne.wiki.fextralife.com/Surgical+Long+Gloves">Surgical Long Gloves</a> duplicate in <a href="#WhiteChurchSet">White Church Set</a></li>
+          <li data-id="sets_3_4"><a href="https://bloodborne.wiki.fextralife.com/Black+Church+Trousers-Dress">Black Church Trousers/Dress</a></li>
+        </ul>
+        <h4 id="BoneAshSet"><a href="https://bloodborne.wiki.fextralife.com/Bone+Ash+Set">Bone Ash Set</a> <span id="sets_totals_4"></span></h4>
+        <ul>
+          <li data-id="sets_4_1"><a href="https://bloodborne.wiki.fextralife.com/Bone+Ash+Mask">Bone Ash Mask</a></li>
+          <li data-id="sets_4_2"><a href="https://bloodborne.wiki.fextralife.com/Bone+Ash+Armor">Bone Ash Armor</a></li>
+          <li data-id="sets_4_3"><a href="https://bloodborne.wiki.fextralife.com/Bone+Ash+Gauntlets">Bone Ash Gauntlets</a></li>
+          <li data-id="sets_4_4"><a href="https://bloodborne.wiki.fextralife.com/Bone+Ash+Leggings">Bone Ash Leggings</a></li>
+        </ul>
+        <h4 id="CainhurstSet"><a href="https://bloodborne.wiki.fextralife.com/Cainhurst+Set">Cainhurst Set</a> <span id="sets_totals_5"></span></h4>
+        <ul>
+          <li data-id="sets_5_1"><a href="https://bloodborne.wiki.fextralife.com/Cainhurst+Helmet">Cainhurst Helmet</a></li>
+          <li data-id="sets_5_2"><a href="https://bloodborne.wiki.fextralife.com/Cainhurst+Armor">Cainhurst Armor</a></li>
+          <li data-id="sets_5_3"><a href="https://bloodborne.wiki.fextralife.com/Cainhurst+Gauntlets">Cainhurst Gauntlets</a></li>
+          <li data-id="sets_5_4"><a href="https://bloodborne.wiki.fextralife.com/Cainhurst+Leggings">Cainhurst Leggings</a></li>
+        </ul>
+        <h4 id="CharredHunterSet"><a href="https://bloodborne.wiki.fextralife.com/Charred+Hunter+Set">Charred Hunter Set</a> <span id="sets_totals_6"></span></h4>
+        <ul>
+          <li data-id="sets_6_1"><a href="https://bloodborne.wiki.fextralife.com/Charred+Hunter+Garb">Charred Hunter Garb</a></li>
+          <li data-id="sets_6_2"><a href="https://bloodborne.wiki.fextralife.com/Charred+Hunter+Gloves">Charred Hunter Gloves</a></li>
+          <li data-id="sets_6_3"><a href="https://bloodborne.wiki.fextralife.com/Charred+Hunter+Trousers">Charred Hunter Trousers</a></li>
+        </ul>
+        <h4 id="ChoirSet"><a href="https://bloodborne.wiki.fextralife.com/Choir+Set">Choir Set</a> <span id="sets_totals_7"></span></h4>
+        <ul>
+          <li data-id="sets_7_1"><a href="https://bloodborne.wiki.fextralife.com/Blindfold+Cap">Blindfold Cap</a></li>
+          <li data-id="sets_7_2"><a href="https://bloodborne.wiki.fextralife.com/Choir+Garb">Choir Garb</a></li>
+          <li data-id="sets_7_3"><a href="https://bloodborne.wiki.fextralife.com/Choir+Gloves">Choir Gloves</a></li>
+          <li data-id="sets_7_4"><a href="https://bloodborne.wiki.fextralife.com/Choir+Trousers">Choir Trousers</a></li>
+        </ul>
+        <h4 id="CrowfeatherSet"><a href="https://bloodborne.wiki.fextralife.com/Crowfeather+Set">Crowfeather Set</a> <span id="sets_totals_8"></span></h4>
+        <ul>
+          <li data-id="sets_8_1"><a href="https://bloodborne.wiki.fextralife.com/Beak+Mask">Beak Mask</a></li>
+          <li data-id="sets_8_2"><a href="https://bloodborne.wiki.fextralife.com/Crowfeather+Garb">Crowfeather Garb</a></li>
+          <li data-id="sets_8_3"><a href="https://bloodborne.wiki.fextralife.com/Crowfeather+Manchettes">Crowfeather Manchettes</a></li>
+          <li data-id="sets_8_4"><a href="https://bloodborne.wiki.fextralife.com/Crowfeather+Trousers">Crowfeather Trousers</a></li>
+        </ul>
+        <h4 id="CrownOfIllusions"><a href="https://bloodborne.wiki.fextralife.com/Crown+of+Illusions">Crown of Illusions</a> <span id="sets_totals_9"></span></h4>
+        <ul>
+          <li data-id="sets_9_1"><a href="https://bloodborne.wiki.fextralife.com/Crown+of+Illusions">Crown of Illusions</a></li>
+        </ul>
+        <h4 id="DollSet"><a href="https://bloodborne.wiki.fextralife.com/Doll+Set">Doll Set</a><span id="sets_totals_10"> </span></h4>
+        <ul>
+          <li data-id="sets_10_1"><a href="https://bloodborne.wiki.fextralife.com/Doll+Hat">Doll Hat</a></li>
+          <li data-id="sets_10_2"><a href="https://bloodborne.wiki.fextralife.com/Doll+Clothes">Doll Clothes</a></li>
+          <li data-id="sets_10_3"><a href="https://bloodborne.wiki.fextralife.com/Doll+Gloves">Doll Gloves</a></li>
+          <li data-id="sets_10_4"><a href="https://bloodborne.wiki.fextralife.com/Doll+Skirt">Doll Skirt</a></li>
+        </ul>
+        <h4 id="ExecutionerSet"><a href="https://bloodborne.wiki.fextralife.com/Executioner+Set">Executioner Set</a> <span id="sets_totals_11"></span></h4>
+        <ul>
+          <li data-id="sets_11_1"><a href="">Gold Ardeo</a></li>
+          <li data-id="sets_11_2"><a href="">Executioner Garb</a></li>
+          <li data-id="sets_11_3"><a href="">Executioner Gauntlets</a></li>
+          <li data-id="sets_11_4"><a href="">Executioner Trousers</a></li>
+        </ul>
+        <h4 id="ForeignSet"><a href="https://bloodborne.wiki.fextralife.com/Foreign+Set">Foreign Set</a> <span id="sets_totals_12"></span></h4>
+        <ul>
+          <li data-id="sets_12_1"><a href="https://bloodborne.wiki.fextralife.com/Black+Hood">Black Hood</a></li>
+          <li data-id="sets_12_2"><a href="https://bloodborne.wiki.fextralife.com/Foreign+Garb">Foreign Garb</a></li>
+          <li data-id="sets_12_3"><a href="https://bloodborne.wiki.fextralife.com/Sullied+Bandage">Sullied Bandage</a></li>
+          <li data-id="sets_12_4"><a href="https://bloodborne.wiki.fextralife.com/Foreign+Trousers">Foreign Trousers</a></li>
+        </ul>
+        <h4 id="GascoigneSet"><a href="https://bloodborne.wiki.fextralife.com/Gascoigne%27s+Set">Gascoigne's Set</a> <span id="sets_totals_13"></span></h4>
+        <ul>
+          <li data-id="sets_13_1"><a href="https://bloodborne.wiki.fextralife.com/Gascoigne%27s+Cap">Gascoigne's Cap</a></li>
+          <li data-id="sets_13_2"><a href="https://bloodborne.wiki.fextralife.com/Gascoigne%27s+Garb">Gascoigne's Garb</a></li>
+          <li data-id="sets_13_3"><a href="https://bloodborne.wiki.fextralife.com/Gascoigne%27s+Gloves">Gascoigne's Gloves</a></li>
+          <li data-id="sets_13_4"><a href="https://bloodborne.wiki.fextralife.com/Gascoigne%27s+Trousers">Gascoigne's Trousers</a></li>
+        </ul>
+        <h4 id="GehrmanSet"><a href="https://bloodborne.wiki.fextralife.com/Gehrman%27s+Hunter+Set">Gehrman's Hunter Set</a> <span id="sets_totals_14"></span></h4>
+        <ul>
+          <li data-id="sets_14_1"><a href="https://bloodborne.wiki.fextralife.com/Gehrman%27s+Hunter+Cap">Gehrman's Hunter Cap</a></li>
+          <li data-id="sets_14_2"><a href="https://bloodborne.wiki.fextralife.com/Gehrman%27s+Hunter+Garb">Gehrman's Hunter Garb</a></li>
+          <li data-id="sets_14_3"><a href="https://bloodborne.wiki.fextralife.com/Gehrman%27s+Hunter+Trousers">Gehrman's Hunter Trousers</a></li>
+        </ul>
+        <h4 id="GraveguardSet"><a href="https://bloodborne.wiki.fextralife.com/Graveguard+Set">Graveguard Set</a> <span id="sets_totals_15"></span></h4>
+        <ul>
+          <li data-id="sets_15_1"><a href="https://bloodborne.wiki.fextralife.com/Graveguard+Mask">Graveguard Mask</a></li>
+          <li data-id="sets_15_2"><a href="https://bloodborne.wiki.fextralife.com/Graveguard+Robe">Graveguard Robe</a></li>
+          <li data-id="sets_15_3"><a href="https://bloodborne.wiki.fextralife.com/Graveguard+Manchettes">Graveguard Manchettes</a></li>
+          <li data-id="sets_15_4"><a href="https://bloodborne.wiki.fextralife.com/Graveguard+Kilt">Graveguard Kilt</a></li>
+        </ul>
+        <h4 id="HenrykHunterSet"><a href="https://bloodborne.wiki.fextralife.com/Henryk%27s+Hunter+Set">Henryk's Hunter Set</a> <span id="sets_totals_16"></span></h4>
+        <ul>
+          <li data-id="sets_16_1"><a href="https://bloodborne.wiki.fextralife.com/Henryk%27s+Hunter+Cap">Henryk's Hunter Cap</a></li>
+          <li data-id="sets_16_2"><a href="https://bloodborne.wiki.fextralife.com/Henryk%27s+Hunter+Garb">Henryk's Hunter Garb</a></li>
+          <li data-id="sets_16_3"><a href="https://bloodborne.wiki.fextralife.com/Henryk%27s+Hunter+Gloves">Henryk's Hunter Gloves</a></li>
+          <li data-id="sets_16_4"><a href="https://bloodborne.wiki.fextralife.com/Henryk%27s+Hunter+Trousers">Henryk's Hunter Trousers</a></li>
+        </ul>
+        <h4 id="HunterSet"><a href="https://bloodborne.wiki.fextralife.com/Hunter+Set">Hunter Set</a> <span id="sets_totals_17"></span></h4>
+        <ul>
+          <li data-id="sets_17_1"><a href="https://bloodborne.wiki.fextralife.com/Hunter+Hat">Hunter Hat</a></li>
+          <li data-id="sets_17_2"><a href="https://bloodborne.wiki.fextralife.com/Top+Hat">Top Hat</a></li>
+          <li data-id="sets_17_3"><a href="https://bloodborne.wiki.fextralife.com/Hunter+Garb">Hunter Garb</a></li>
+          <li data-id="sets_17_4"><a href="https://bloodborne.wiki.fextralife.com/Hunter+Garb">Hunter Garb w/ cape</a></li>
+          <li data-id="sets_17_5"><a href="https://bloodborne.wiki.fextralife.com/Hunter+Gloves">Hunter Gloves</a></li>
+          <li data-id="sets_17_6"><a href="https://bloodborne.wiki.fextralife.com/Hunter+Trousers">Hunter Trousers</a></li>
+        </ul>
+        <h4 id="KnightSet"><a href="https://bloodborne.wiki.fextralife.com/Knight%27s+Set">Knight's Set</a> <span id="sets_totals_18"></span></h4>
+        <ul>
+          <li data-id="sets_18_1"><a href="https://bloodborne.wiki.fextralife.com/Knight%27s+Wig">Knight's Wig</a></li>
+          <li data-id="sets_18_2"><a href="https://bloodborne.wiki.fextralife.com/Knight%27s+Garb">Knight's Garb</a></li>
+          <li data-id="sets_18_3"><a href="https://bloodborne.wiki.fextralife.com/Knight%27s+Gloves">Knight's Gloves</a></li>
+          <li data-id="sets_18_4"><a href="https://bloodborne.wiki.fextralife.com/Knight%27s+Trousers-Dress">Knight's Trousers/Dress</a></li>
+        </ul>
+        <h4 id="MadmanSet"><a href="https://bloodborne.wiki.fextralife.com/Madman+Set">Madman Set</a> <span id="sets_totals_19"></span></h4>
+        <ul>
+          <li data-id="sets_19_1"><a href="https://bloodborne.wiki.fextralife.com/Madman+Hood">Madman Hood</a></li>
+          <li data-id="sets_19_2"><a href="https://bloodborne.wiki.fextralife.com/Madman+Garb">Madman Garb</a></li>
+          <li data-id="sets_19_3"><a href="https://bloodborne.wiki.fextralife.com/Madman+Manchettes">Madman Manchettes</a></li>
+          <li data-id="sets_19_4"><a href="https://bloodborne.wiki.fextralife.com/Madman+Leggings">Madman Leggings</a></li>
+        </ul>
+        <h4 id="MensisCage"><a href="https://bloodborne.wiki.fextralife.com/Mensis+Cage">Mensis Cage</a> <span id="sets_totals_20"></span></h4>
+        <ul>
+          <li data-id="sets_20_1"><a href="https://bloodborne.wiki.fextralife.com/Mensis+Cage">Mensis Cage</a></li>
+        </ul>
+        <h4 id="NobleDress"><a href="https://bloodborne.wiki.fextralife.com/Noble+Dress">Noble Dress</a> <span id="sets_totals_21"></span></h4>
+        <ul>
+          <li data-id="sets_21_1"><a href="https://bloodborne.wiki.fextralife.com/Noble+Dress">Noble Dress</a></li>
+        </ul>
+        <h4 id="ShabbySet"><a href="https://bloodborne.wiki.fextralife.com/Shabby+Set">Shabby Set</a> <span id="sets_totals_22"></span></h4>
+        <ul>
+          <li data-id="sets_22_1"><a href="https://bloodborne.wiki.fextralife.com/Rumpled+Yharnam+Hat">Rumpled Yharnam Hat</a></li>
+          <li data-id="sets_22_2"><a href="https://bloodborne.wiki.fextralife.com/Sweaty+Clothes">Sweaty Clothes</a></li>
+        </ul>
+        <h4 id="StudentSet"><a href="https://bloodborne.wiki.fextralife.com/Student+Set">Student Set</a> <span id="sets_totals_23"></span></h4>
+        <ul>
+          <li data-id="sets_23_1"><a href="https://bloodborne.wiki.fextralife.com/Student+Uniform">Student Uniform</a></li>
+          <li data-id="sets_23_2"><a href="https://bloodborne.wiki.fextralife.com/Student+Uniform+Variant">Student Uniform Variant</a></li>
+          <li data-id="sets_23_3"><a href="https://bloodborne.wiki.fextralife.com/Student+Trousers">Student Trousers</a></li>
+        </ul>
+        <h4 id="TombProspectorSet"><a href="https://bloodborne.wiki.fextralife.com/Tomb+Prospector+Set">Tomb Prospector Set</a> <span id="sets_totals_24"></span></h4>
+        <ul>
+          <li data-id="sets_24_1"><a href="https://bloodborne.wiki.fextralife.com/Tomb+Prospector+Hood">Tomb Prospector Hood</a></li>
+          <li data-id="sets_24_2"><a href="https://bloodborne.wiki.fextralife.com/Tomb+Prospector+Garb">Tomb Prospector Garb</a></li>
+          <li data-id="sets_24_3"><a href="https://bloodborne.wiki.fextralife.com/Tomb+Prospector+Gloves">Tomb Prospector Gloves</a></li>
+          <li data-id="sets_24_4"><a href="https://bloodborne.wiki.fextralife.com/Tomb+Prospector+Trousers">Tomb Prospector Trousers</a></li>
+        </ul>
+        <h4 id="WhiteChurchSet"><a href="https://bloodborne.wiki.fextralife.com/White+Church+Set">White Church Set</a> <span id="sets_totals_25"></span></h4>
+        <ul>
+          <li data-id="sets_25_1"><a href="https://bloodborne.wiki.fextralife.com/White+Church+Hat">White Church Hat</a></li>
+          <li data-id="sets_25_2"><a href="https://bloodborne.wiki.fextralife.com/White+Church+Garb">White Church Garb</a></li>
+          <li data-id="sets_25_3"><a href="https://bloodborne.wiki.fextralife.com/Surgical+Long+Gloves">Surgical Long Gloves</a> duplicate in <a href="#BlackChurchSet">Black Church Set</a></li>
+          <li data-id="sets_25_4"><a href="https://bloodborne.wiki.fextralife.com/White+Church+Trousers-Dress">White Church Trousers/dress</a></li>
+        </ul>
+        <h4 id="YaharGulSet"><a href="https://bloodborne.wiki.fextralife.com/Yahar%27gul+Set">Yahar'Gul Set</a> <span id="sets_totals_26"></span></h4>
+        <ul>
+          <li data-id="sets_26_1"><a href="https://bloodborne.wiki.fextralife.com/Black+Hooded+Iron+Helm">Black Hooded Iron Helm</a></li>
+          <li data-id="sets_26_2"><a href="https://bloodborne.wiki.fextralife.com/Iron+Yahar%27gul+Helm">Iron Yahar'Gul Helm</a></li>
+          <li data-id="sets_26_3"><a href="https://bloodborne.wiki.fextralife.com/Yahar%27gul+Black+Garb">Yahar'Gul Black Garb</a></li>
+          <li data-id="sets_26_4"><a href="https://bloodborne.wiki.fextralife.com/Yahar%27gul+Black+Gloves">Yahar'Gul Black Gloves</a></li>
+          <li data-id="sets_26_5"><a href="https://bloodborne.wiki.fextralife.com/Yahar%27gul+Black+Trousers">Yahar'Gul Black Trousers</a></li>
+        </ul>
+        <h4 id="YharnamHunterSet"><a href="https://bloodborne.wiki.fextralife.com/Yharnam+Hunter+Set">Yharnam Hunter Set</a> <span id="sets_totals_27"></span></h4>
+        <ul>
+          <li data-id="sets_27_1"><a href="https://bloodborne.wiki.fextralife.com/Yharnam+Hunter+Cap">Yharnam Hunter Cap</a></li>
+          <li data-id="sets_27_2"><a href="https://bloodborne.wiki.fextralife.com/Yharnam+Hunter+Garb">Yharnam Hunter Garb</a></li>
+          <li data-id="sets_27_3"><a href="https://bloodborne.wiki.fextralife.com/Yharnam+Hunter+Gloves">Yharnam Hunter Gloves</a></li>
+          <li data-id="sets_27_4"><a href="https://bloodborne.wiki.fextralife.com/Yharnam+Hunter+Trousers">Yharnam Hunter Trousers</a></li>
+        </ul>
+        <hr />
+        <h3>The Old Hunters DLC sets</h3>
+        <h4 id="ButcherSet"><a href="https://bloodborne.wiki.fextralife.com/Butcher+Set">Butcher Set</a> <span id="sets_totals_28"></span></h4>
+        <ul>
+          <li data-id="sets_28_1"><a href="https://bloodborne.wiki.fextralife.com/Butcher+Mask">Butcher Mask</a></li>
+          <li data-id="sets_28_2"><a href="https://bloodborne.wiki.fextralife.com/Butcher+Garb">Butcher Garb</a></li>
+          <li data-id="sets_28_3"><a href="https://bloodborne.wiki.fextralife.com/Butcher+Gloves">Butcher Gloves</a></li>
+          <li data-id="sets_28_4"><a href="https://bloodborne.wiki.fextralife.com/Butcher+Trousers">Butcher Trousers</a></li>
+        </ul>
+        <h4 id="BradorSet"><a href="https://bloodborne.wiki.fextralife.com/Brador%27s+Set">Brador's Set</a> <span id="sets_totals_29"></span></h4>
+        <ul>
+          <li data-id="sets_29_1"><a href="https://bloodborne.wiki.fextralife.com/Bradors+Testimony">Bradors Testimony</a></li>
+          <li data-id="sets_29_2"><a href="https://bloodborne.wiki.fextralife.com/Beast+Hide+Garb">Beast Hide Garb</a></li>
+          <li data-id="sets_29_3"><a href="https://bloodborne.wiki.fextralife.com/Bloodied+Arm+Bands">Bloodied Arm Bands</a></li>
+          <li data-id="sets_29_4"><a href="https://bloodborne.wiki.fextralife.com/Bloodied+Trousers">Bloodied Trousers</a></li>
+        </ul>
+        <h4 id="ConstableSet"><a href="https://bloodborne.wiki.fextralife.com/Constable+Set">Constable Set</a> <span id="sets_totals_30"></span></h4>
+        <ul>
+          <li data-id="sets_30_1"><a href="https://bloodborne.wiki.fextralife.com/Master%27s+Iron+Helm">Master's Iron Helm</a></li>          
+          <li data-id="sets_30_2"><a href="https://bloodborne.wiki.fextralife.com/One-Eyed+Iron+Helm">One-Eyed Iron Helm</a></li>
+          <li data-id="sets_30_3"><a href="https://bloodborne.wiki.fextralife.com/Constable%27s+Garb">Constable's Garb</a></li>
+          <li data-id="sets_30_4"><a href="https://bloodborne.wiki.fextralife.com/Constable+Gloves">Constable Gloves</a></li>
+          <li data-id="sets_30_5"><a href="https://bloodborne.wiki.fextralife.com/Constable+Trousers">Constable Trousers</a></li>
+        </ul>
+        <h4 id="DecorativeOldHunterSet"><a href="https://bloodborne.wiki.fextralife.com/Decorative+Old+Hunter+Set">Decorative Old Hunter Set</a> <span id="sets_totals_31"></span></h4>
+        <ul>
+          <li data-id="sets_31_1"><a href="">Decorative Old Hunter Garb</a></li>
+          <li data-id="sets_31_2"><a href="">Decorative Old Hunter Trousers</a></li>
+        </ul>
+        <h4 id="EnlargedHead"><a href="https://bloodborne.wiki.fextralife.com/Enlarged+Head">Enlarged Head</a> <span id="sets_totals_32"></span></h4>
+        <ul>
+          <li data-id="sets_32_1"><a href="https://bloodborne.wiki.fextralife.com/Enlarged+Head">Enlarged Head</a></li>
+        </ul>
+        <h4 id="HarrowedSet"><a href="https://bloodborne.wiki.fextralife.com/Harrowed+Set">Harrowed Set</a> <span id="sets_totals_33"></span></h4>
+        <ul>
+          <li data-id="sets_33_1"><a href="https://bloodborne.wiki.fextralife.com/Harrowed+Hood">Harrowed Hood</a></li>
+          <li data-id="sets_33_2"><a href="https://bloodborne.wiki.fextralife.com/Harrowed+Garb">Harrowed Garb</a></li>
+          <li data-id="sets_33_3"><a href="https://bloodborne.wiki.fextralife.com/Harrowed+Gloves">Harrowed Gloves</a></li>
+          <li data-id="sets_33_4"><a href="https://bloodborne.wiki.fextralife.com/Harrowed+Trousers">Harrowed Trousers</a></li>
+        </ul>
+        <h4 id="MariaHunterSet"><a href="https://bloodborne.wiki.fextralife.com/Maria+Hunter+Set">Maria Hunter Set</a> <span id="sets_totals_34"></span></h4>
+        <ul>
+          <li data-id="sets_34_1"><a href="https://bloodborne.wiki.fextralife.com/Maria+Hunter+Cap">Maria Hunter Cap</a></li>
+          <li data-id="sets_34_2"><a href="https://bloodborne.wiki.fextralife.com/Maria+Hunter+Garb">Maria Hunter Garb</a></li>
+          <li data-id="sets_34_3"><a href="https://bloodborne.wiki.fextralife.com/Maria+Hunter+Gloves">Maria Hunter Gloves</a></li>
+          <li data-id="sets_34_4"><a href="https://bloodborne.wiki.fextralife.com/Maria+Hunter+Trousers">Maria Hunter Trousers</a></li>
+        </ul>
+        <h4 id="OldHunterSet"><a href="https://bloodborne.wiki.fextralife.com/Old+Hunter+Set">Old Hunter Set</a> <span id="sets_totals_35"></span></h4>
+        <ul>
+          <li data-id="sets_35_1"><a href="https://bloodborne.wiki.fextralife.com/Old+Hunter+Cap">Old Hunter Cap</a></li>
+          <li data-id="sets_35_2"><a href="https://bloodborne.wiki.fextralife.com/Old+Hunter+Top+Hat">Old Hunter Top Hat</a></li>
+          <li data-id="sets_35_3"><a href="https://bloodborne.wiki.fextralife.com/Old+Hunter+Garb">Old Hunter Garb</a></li>
+          <li data-id="sets_35_4"><a href="https://bloodborne.wiki.fextralife.com/Old+Hunter+Gloves">Old Hunter Gloves</a></li>
+          <li data-id="sets_35_5"><a href="https://bloodborne.wiki.fextralife.com/Old+Hunter+Trousers">Old Hunter Trousers</a></li>
+        </ul>
+        <h4 id="YamamuraSet"><a href="https://bloodborne.wiki.fextralife.com/Yamamura+Set">Yamamura Set</a> <span id="sets_totals_36"></span></h4>
+        <ul>
+          <li data-id="sets_36_1"><a href="https://bloodborne.wiki.fextralife.com/Yamamura+Hunter+Hat">Yamamura Hunter Set</a></li>
+          <li data-id="sets_36_2"><a href="https://bloodborne.wiki.fextralife.com/Khaki+Haori">Khaki Haori</a></li>
+          <li data-id="sets_36_3"><a href="https://bloodborne.wiki.fextralife.com/Old+Hunter+Arm+Bands">Old Hunter Arm Bands</a></li>
+          <li data-id="sets_36_4"><a href="https://bloodborne.wiki.fextralife.com/Wine+Hakama">Wine Hakama</a></li>
+        </ul>
+        <hr />
+      </div>
+      <div class="tab-pane" id="tabInformation">
+        <h2>Information</h2>
+        <ul>
+          <li><a href="#Coldblood_Types">Coldblood Types</a></li>
+        </ul>
+        <hr />
+
+        <h3 id="Coldblood_Types">Coldblood Types</h3>
+        <table class="table-striped">
+          <thead>
+            <tr><th>Name</th><th>Souls</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="http://bloodborne.wiki.fextralife.com/Coldblood+Dew">Coldblood Dew</a></td>
+              <td>(1) 350 / (2) 500 / (3) 1000</td></tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Thick+Coldblood">Thick Coldblood</a></td>
+                <td>(4) 1200 / (5) 1500 / (6) 1800</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Frenzied+Coldblood">Frenzied Coldblood</a></td>
+                <td>(7) 2000 / (8) 3000 / (9) 5000</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Kin+Coldblood">Kin Coldblood</a></td>
+                <td>(10) 8000 / (11) 10,000 / (12) 20,000</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Great+One+Coldblood">Great One Coldblood</a></td>
+                <td>40,000</td>
+              </tr><tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Old+Great+One+Coldblood">Old Great One Coldblood</a></td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Revered+Great+One+Coldblood">Revered Great One Coldblood</a></td>
+                <td>100,000 - Not found in game yet</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane" id="tabHelp">
+          <h2>Help</h2>
+
+          <h3>Is this a guide?</h3>
+          <p>Nope, not really. This is a set of checklists and information that you can use while playing Dark Souls to make sure you don't miss an item, action, conversation or boss. If you need playthroughs then you can click on the links scattered throughout the page to find them in the wiki.</p>
+
+          <h3>Do I need to follow the playthrough in this exact order?</h3>
+          <p>Bloodborne is not a linear game and has multiple ways of progressing. This is generally the way I like to play through the game, so feel free to follow it if you like or mix it up. You can always jump back and forth and check things off in a different order.</p>
+
+          <h3>Can I use this for multiple characters?</h3>
+          <p>Yup, use the profile selector and buttons at the top right of the page to setup multiple characters.</p>
+
+          <h3>How do I help with feedback, corrections, suggestions or additions?</h3>
+          <p>You can post in <a href="https://www.reddit.com/r/bloodborne/comments/3sfmxs/bloodborne_progress_guide/">this Reddit thread</a> or if you know your way about Git/GitHub then fork <a href="https://github.com/ZKjellberg/bloodborne-cheat-sheet/">my repo</a> and submit a pull request.</p>
+
+          <h3>How does the checklist status get saved?</h3>
+          <p>It gets saved to the local storage in your browser and not to any database or API. So if you are
+            clearing your browser cache make sure not to delete the site data or your checklists will
+            get reset.</p>
+        </div>
+      </div>
+    </div>
+    <div id="profileModal" class="modal hide fade">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 id="profileModalTitle">Profile</h3>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="profileModalName">Name</label>
+            <div class="controls">
+              <input type="text" id="profileModalName" placeholder="Enter profile name">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#" id="profileModalClose" class="btn">Close</a>
+        <a href="#" id="profileModalAdd" class="btn btn-primary">Add</a>
+        <a href="#" id="profileModalUpdate" class="btn btn-primary">Update</a>
+        <a href="#" id="profileModalDelete" class="btn btn-danger">Delete</a>
+      </div>
+    </div>
+  </body>
+</html>

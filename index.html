@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <title>CTF Checklist</title>
+  <title>CTF & Hackfest Checklist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="CTF/Hackfest checklist">
   <meta name="author" content="orangepeelbeef & geekiespice">
@@ -27,16 +27,17 @@
   <div class="container">
     <div class="navbar">
       <div class="navbar-inner">
-        <h1>PLAYTHROUGH CTF Checklist</h1>
+        <h1>CTF & Hackfest Checklist</h1>
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#tabHackThrough" data-toggle="tab">Hackthrough</a></li>
-          <li><a href="#tabImages" data-toggle="tab">Images</a></li>
-          <li><a href="#tabSets" data-toggle="tab">Passwords</a></li>
-          <li><a href="#tabInformation" data-toggle="tab">Cryptography</a></li>
-          <li><a href="#tabInformation" data-toggle="tab">Software Defined Radio</a></li>
-          <li><a href="#tabInformation" data-toggle="tab">Generic Tools</a></li>
-          <li><a href="#tabInformation" data-toggle="tab">Useful Links</a></li>
-          <li><a href="#tabHelp" data-toggle="tab">Help</a></li>
+          <li class="active"><a href="#tabHackthrough" data-toggle="tab">Hackthrough</a></li>
+          	<li><a href="#tabImages" data-toggle="tab">Images</a></li>
+			<li><a href="#tabPasswords" data-toggle="tab">Passwords</a></li>
+			<li><a href="#tabWebapp" data-toggle="tab">Web Application Tools</a></li>
+			<li><a href="#tabDns" data-toggle="tab">DNS Tools</a></li>
+			
+			<li><a href="#tabSdr" data-toggle="tab">Software Defined Radio</a></li>
+			<li><a href="#tabGeneric" data-toggle="tab">Generic Tools</a></li>
+ 
         </ul>
         <div class="profile" style="float: right;">
           <div class="input-append">
@@ -52,7 +53,7 @@
     <div id="intro">
       <p>
         The following is a checklist and set of information for use when attempting CTF or Hackfest style challenges.
-        This checklist was created by using <a href="https://github.com/smcnabb">Stephen McNabb</a>'s Dark Soul Cheat Sheet code.
+        This checklist was created by using <a href="https://github.com/smcnabb">Stephen McNabb</a>'s Dark Soul Cheat Sheet code along with the initial content dump from <a href="https://gist.github.com/orangepeelbeef">Orangpeelbeef</a>'s hacking_ctf_tools.
       </p>
       <p>
         <em>Warning: This could be too much fun for you!</em>
@@ -60,281 +61,387 @@
     </div>
 
     <div class="tab-content">
-      <div class="tab-pane active" id="tabHackthrough">
-        <h2>Hack All The Things<span id="hackthrough_overall_total"></span></h2>
+		
+		
+    
+	<div class="tab-pane active" id="tabHackthrough">
+       
+	
+		<h2>Hack All The Things<span id="hackthrough_overall_total"></span></h2>
         <ul>
           <li>
             <a href="#images">Images</a> <span id="hackthrough_nav_totals_1"></span>
           </li>
           <li><a href="#passwords">Passwords</a> <span id="hackthrough_nav_totals_2"></span></li>
-          <li><a href="#cryptography">Cryptography</a> <span id="hackthrough_nav_totals_3"></span></li>
-          <li><a href="#software_defined_radio">Software Defined Radio</a><span id="hackthrough_nav_totals_4"></span></li>
-          <li><a href="#generic_tools">Generic Tools</a> <span id="hackthrough_nav_totals_5"></span></li>
-          <li><a href="#useful_cheatsheets">Useful Cheatsheets</a> <span id="hackthrough_nav_totals_6"></span></li>
+          <li><a href="#webapp">Web Application Tools</a> <span id="hackthrough_nav_totals_3"></span></li>
+          <li><a href="#dns">DNS Tools</a> <span id="hackthrough_nav_totals_4"></span></li>
+		  <li><a href="#sdr">Software Defined Radio</a> <span id="hackthrough_nav_totals_5"></span></li>
+          <li><a href="#generic">Generic Tools</a> <span id="hackthrough_nav_totals_6"></span></li>
+          
 
         </ul>
         <hr />
 
+
+		
+		
         <h3 id="images"><a href="#">Images</a> <span id="hackthrough_totals_1"></span></h3>
         <ul>
-          <!--<li data-id="playthrough_1_1">Die, or continue into <a href="#">Central Yharnam</a></li> -->
           <li data-id="hackthrough_1_1">exiftool</li>
-          <li data-id="hackthrough_1_2">hexdump</li>
-          <li data-id="hackthrough_1_3">strings</li>
-          <li data-id="hackthrough_1_4">steganography</li>
+		  <li data-id="hackthrough_1_2">zteg</li>
+          <li data-id="hackthrough_1_3">hexdump</li>
+          <li data-id="hackthrough_1_4">strings</li>
+          <li data-id="hackthrough_1_5">steganography</li>
         </ul>
 
         <h3 id="passwords"><a href="#">Passwords</a> <span id="hackthrough_totals_2"></span></h3>
         <ul>
           <li data-id="hackthrough_2_1">john the ripper</li>
           <li data-id="hackthrough_2_2">hashcat</li>
+			<li data-id="hackthrough_2_3">word lists</li>
           
         </ul>
 
-        <h3 id="cryptography"><a href="#">Cryptography</a> <span id="hackthrough_totals_3"></span></h3>
+        <h3 id="webapp"><a href="#">Web Application Tools</a> <span id="hackthrough_totals_3"></span></h3>
         <ul>
-          <!--<li data-id="playthrough_3_1">Find <a href="#">Gilbert</a> and begin his quest line</li>-->
-          <li data-id="hackthrough_3_1">caesar cipher/rot13</li>
-          <li data-id="hackthrough_3_2">substitution cipher</li>
-          <li data-id="hackthrough_3_3">ctf crypto for beginners</li>
+
+          <li data-id="hackthrough_3_1">proxies</li>
+          <li data-id="hackthrough_3_2">crawlers</li>
+          <li data-id="hackthrough_3_3">specialized tools</li>
         </ul>
 
-        <h3 id="software_defined_radio">Software Defined Radio<span id="hackthrough_totals_4"></span></h3>
+		
+			<h3 id="dns"><a href="#">DNS tools</a> <span id="hackthrough_totals_4"></span></h3>
+		
+		<ul>
+		<li data-id="hackthrough_4_1">dnsrecon</li>
+			<li data-id="hackthrough_4_2">dnsrecon bruteforce</li>
+			<li data-id="hackthrough_4_3">fierce</li>
+			<li data-id="hackthrough_4_4">dnsenum</li>
+			
+		</ul>
+	
+		
+		<h3 id="sdr"><a href="#">Software Defined Radio</a> <span id="hackthrough_totals_5"></span></h3>
+		
+		<ul>
+		<li data-id="hackthrough_5_1">fldigi</li>
+			<li data-id="hackthrough_5_2">gqrx</li>
+			<li data-id="hackthrough_5_3">multimon-ng</li>
+		</ul>
+
+
+        <h3 id="generic"><a href="#">Generic Tools</a> <span id="hackthrough_totals_6"></span></h3>
         <ul>
-          <!--<li data-id="playthrough_4_1">Defeat <a href="#">Cleric Beast</a></li>-->
-          <li data-id="hackthrough_4_1">fldigi</li>
-          <li data-id="hackthrough_4_2">gqrx</li>
-          <li data-id="hackthrough_4_3">multimon-ng</li>
-
-
-        </ul>
-
-        <h3 id="generic_tools"><a href="#">Generic Tools</a> <span id="hackthrough_totals_5"></span></h3>
-        <ul>
-          <!--<li data-id="playthrough_5_1">Defeat <a href="#">Father Gascoigne</a></li>-->
-          <li data-id="hackthrough_5_1">strings</li>
-          <li data-id="hackthrough_5_2">file</li>
-          <li data-id="hackthrough_5_3">hex editor</li>
-        </ul>
-
-        <h3 id="useful_cheat_cheets"><a href="#">Useful Cheat Sheets</a> <span id="hackthrough_totals_6"></span></h3>
-        <ul>
-          <!--<li data-id="playthrough_6_1">Meet <a href="#">Alfred</a></li>-->
-          <li data-id="hackthrough_6_1">usefull <a href="https://gtfobins.github.io/">commands shell/exploits</a></li>
+          <li data-id="hackthrough_6_1">cyberchef</li>
+          <li data-id="hackthrough_6_2">strings</li>
+          <li data-id="hackthrough_6_3">file</li>
+			<li data-id="hackthrough_6_4">hex editor</li>
+			<li data-id="hackthrough_6_5">xxd</li>
+			<li data-id="hackthrough_6_6">file carving</li>
+			<li data-id="hackthrough_6_7">ports/nmap</li>
+			<li data-id="hackthrough_6_8">fuzzing</li>
+			<li data-id="hackthrough_6_9">vulnerability scanners</li>
+			<li data-id="hackthrough_6_10">cryptography</li>
+			<li data-id="hackthrough_6_11">cheatsheets</li>
+			<li data-id="hackthrough_6_1">useful <a href="https://gtfobins.github.io/">commands shell/exploits</a></li>
         </ul>
       </div>
+
+		
+
+		
+		
+		
+
       <div class="tab-pane" id="tabImages">
-        <h2>Images<span id="checklist_overall_total"></span></h2>
-        <ul>
-          <li><a href="#exiftool">exiftool<span id="checklist_nav_totals_1"></span>
-          </li>
-          <li>
-            <a href="#Hunters_Craft">Hunter's Craft</a><span id="checklist_nav_totals_2"></span>
-          </li>
-        </ul>
 
+		  <h2>Images<span id="images_overall_total"></span></h2>
+        <ul>
+          <li><a href="#images">Image data collection</a> <span id="images_nav_totals_1"></span></li>
+		</ul>
         <hr />
 
-        <h3 id="exiftool">Helpful commands<span id="checklist_totals_1"></span></h3>
-        <h4>exiftool</h4>
+		
+		  
+		 
+        <h3 id="images"><a href="#">Image data collection</a> <span id="images_totals_1"></span></h3>
+        	<ul>
+          		<li data-id="images_1_1">exiftool (exiftool myfile)</li>
+		  		<li data-id="images_1_2">zsteg PNG & BMP <a href="https://github.com/zed-0xff/zsteg">https://github.com/zed-0xff/zsteg</a></li>	
+          		<li data-id="images_1_3">hexdump (hexdump -C myfile)</li>
+				<li data-id="images_1_4">strings</li>
+		  	</ul>
+
+      </div>
+
+
+
+		
+		
+		
+
+            <div class="tab-pane" id="tabPasswords">
+        
+
+		  <h2>Passwords<span id="passwords_overall_total"></span></h2>
         <ul>
-          <li data-id="checklist_1_1">exiftool myfile</li>
+          <li><a href="#john">John the Ripper</a> <span id="passwords_nav_totals_1"></span></li>
+			<li><a href="#hashcat">Hashcat</a> <span id="passwords_nav_totals_2"></span></li>
+			<li><a href="#wordlist">Wordlists</a> <span id="passwords_nav_totals_3"></span></li>
+		</ul>
+        <hr />
+
+		
+		  
+		 
+        <h3 id="john"><a href="#">John the Ripper</a> <span id="passwords_totals_1"></span></h3>
+        	<ul>
+				<p>john itself is pretty good at cracking although a bit slow, however it comes with a ton of great tools for getting hashes out of files</p>
+          		<li data-id="passwords_1_1">office2john, pdf2john (ex: john filename)</li>
+				<li data-id="passwords_1_2">pdf2john (ex: john filename)</li>
+				<li data-id="passwords_1_3">ex: john filename</li>
+		  	</ul>
+		
+				<h3 id="hashcat"><a href="#">HashCat</a> <span id="passwords_totals_2"></span></h3>
+				<ul>
+					<p>hashcat is generally much faster than john because it uses GPU instead of CPU, it is a lot more complicated and has a ton of modes and rules. hashcat can use the hashes gathered with office2john, etc</p>
+			<li data-id="passwords_2_1">ex cracking word 2013 document pw: <br>
+  										hashcat -a 0 -m 9600 --username office_hash.txt rockyou.txt  -O</li>
+  			<li data-id="passwords_2_2">ex usage of rules, you can use multiple<br>
+  										hashcat -a 0 -m 0 cracklist.db wordlist.txt -r /usr/share/hashcat/rules/best64.rule -O</li>
+  			<li data-id="passwords_2_3">ex combination attack left and right wordlists (change the order if you want to try them flipped)<br>
+  										hashcat -a 1 -m 0 cracklist.db biology rockyou.txt</li>
+  			<li data-id="passwords_2_4">ex incremental mask attack (adds digits and symbols to the end of everything in wordlist)<br>
+  										hashcat -a 6 -m 0 cracklist.db francais.txt -1 ?d?s ?1?1?1?1?1 -i</li>
+  			<li data-id="passwords_2_5">ex incremental mask attack (add digits and symbols to the front of everything in wordlist)<br>
+										hashcat -a 7 -m 0 cracklist.db -1 ?d?s ?1?1?1?1?1 francais.txt -i<br></li>
+				</ul>
+				
+	<h3 id="wordlist"><a href="#">Wordlists for pw cracking and fuzzing</a> <span id="passwords_totals_3"></span></h3>	
+<a href="https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/big-list-of-naughty-strings.txt">https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/big-list-of-naughty-strings.txt</a></p>
+	<ul><p>
+
+				<li data-id="passwords_3_1">rockyou</li>
+				<li data-id="passwords_3_2">dirb (usually /usr/share/dirb/wordlists/)</li>
+				<li data-id="passwords_3_3">CeWL takes a webpage and makes a wordlist out of it (seems buggy in testing, especially with unicode characters)</li>
+		<li data-id="passwords_3_4">wyd takes a file and makes a wordlist</li>
+  <li data-id="passwords_3_5">cupp gather osint data and make a wordlist, or expand an existing wordlit</li>
+		<li data-id="passwords_3_6">crunch make wordlists from character sets<br/>
+			ex:  crunch 3 3 ABCDEFGHIJKLMNOPQRSTUVWXYZ   (all combinations of uppercase letters of length 3)</li>
+				</ul>		
+		
+
+      </div>
+	  
+
+	  
+
+ <div class="tab-pane" id="tabWebapp">
+        
+
+		  <h2>Web Application Tools<span id="webapp_overall_total"></span></h2>
+        <ul>
+          <li><a href="#proxies">Proxies</a> <span id="webapp_nav_totals_1"></span></li>
+			<li><a href="#crawlers">Crawlers</a> <span id="webapp_nav_totals_2"></span></li>
+			<li><a href="#specialized">Specialized tools</a> <span id="webapp_nav_totals_3"></span></li>
+		</ul>
+        <hr />
+
+		
+		  
+		 
+        <h3 id="proxies"><a href="#">Proxies</a> <span id="webapp_totals_1"></span></h3>
+        	<ul>
+          		<li data-id="webapp_1_1">burpsuite (usually runs on 8080)</li>
+				<li data-id="webapp_1_2">fiddler (runs on 8888)</li>
+				<li data-id="webapp_1_3">parosproxy (runs on 8080)</li>
+		  	</ul>
+	
+        <h3 id="crawlers"><a href="#">Crawlers</a> <span id="webapp_totals_2"></span></h3>
+        	<ul>
+          		<li data-id="webapp_2_1">gobuster</li>
+				<li data-id="webapp_2_2">dirbuster</li>
+				<li data-id="webapp_2_3">dirsearch</li>
+				<li data-id="webapp_2_4">dirb</li>
+		  	</ul>		
+	 
+        <h3 id="specialized"><a href="#">Specialized tools</a> <span id="webapp_totals_3"></span></h3>
+        	<ul>
+          		<li data-id="webapp_3_1">sqlmap (look for sql injection vulns when you find a vulnerable endpoint)
+  gitTools https://github.com/internetwache/GitTools (things for exposed .git dirs)</li>
+		  	</ul>	 
+	  </div>	  
+	  
+
+
+	 
+<div class="tab-pane" id="tabDns">
+        
+
+		  <h2>DNS tools<span id="dns_overall_total"></span></h2>
+        <ul>
+          <li><a href="#tools">DNS Tools</a> <span id="dns_nav_totals_1"></span></li>
+
+		</ul>
+        <hr />
+
+		
+		  
+		 
+        <h3 id="recon"><a href="#">DNS Tools</a> <span id="dns_totals_1"></span></h3>
+        	<ul>
+          		<li data-id="dns_1_1">dnsrecon <br>
+  										ex:  dnsrecon -d somehost</li>
+          		<li data-id="dns_1_2">dnsrecon bruteforce<br>
+  						ex: dnsrecon -d somehost -t brt wordlist.txt</li>
+				<li data-id="dns_1_3">fierce <br>
+					ex: fierce somehose</li>
+				<li data-id="dns_1_4">dnsenum</li>
+		  	</ul>
+	 
+	  </div>	  	 
+	 
+	 
+<div class="tab-pane" id="tabSdr">
+        
+	
+		  <h2>Software Defined Radio<span id="sdr_overall_total"></span></h2>
+        <ul>
+          <li><a href="#fldigi">fldigi</a> <span id="sdr_nav_totals_1"></span></li>
+			<li><a href="#gqrx">gqrx</a> <span id="sdr_nav_totals_2"></span></li>
+			<li><a href="#multimon">multimon-ng</a> <span id="sdr_nav_totals_3"></span></li>
+		</ul>
+        <hr />
+
+        <h3 id="fldigi"><a href="#">fldigi</a> <span id="sdr_totals_1"></span></h3>
+        	<ul>
+          		<li data-id="sdr_1_1">you can get data straight from the sound card with fldigi</li>
+		  	</ul>
+	
+        <h3 id="gqrx"><a href="#">gqrx</a> <span id="sdr_totals_2"></span></h3>
+        	<ul>
+          		<li data-id="sdr_2_1">reads from an SDR or recorded SDR files and can do a lot of things</li>
+				<li data-id="sdr_2_2">can also output to a network stream for piping into multimon-ng</li>
+				<li data-id="sdr_2_3">dirsearch</li>
+				<li data-id="sdr_2_4">dirb</li>
+		  	</ul>		
+	 
+        <h3 id="multimon"><a href="#">multimon-ng</a> <span id="sdr_totals_3"></span></h3>
+        	
+				<p>decoders for a ton of different signal types</p>
+			<ul>
+				<li data-id="sdr_3_1">morse</li>
+				<li data-id="sdr_3_2">pocsag</li>
+				<li data-id="sdr_3_3">very nice chained from gqrx via sox</li>
+				<li data-id="sdr_3_4"><a href="https://www.bastibl.net/pocsag/">https://www.bastibl.net/pocsag/</a></li>
+		  	</ul>	 
+	  </div>	  	 
+
+      <div class="tab-pane" id="tabGeneric">
+   
+		<h2>Generic Tools<span id="generic_overall_total"></span></h2>
+        <ul>
+          <li><a href="#cyberchef">Cyberchef</a> <span id="generic_nav_totals_1"></span></li>
+          <li><a href="#strings">Strings</a> <span id="generic_nav_totals_2"></span></li>
+          <li><a href="#file">File</a> <span id="generic_nav_totals_3"></span></li>
+          <li><a href="#hexeditor">Hex editor</a> <span id="generic_nav_totals_4"></span></li>
+		  <li><a href="#xxd">xxd</a> <span id="generic_nav_totals_5"></span></li>
+		  <li><a href="#filecarving">File carving</a> <span id="generic_nav_totals_6"></span></li>
+		  <li><a href="#ports">Ports/nmap</a> <span id="generic_nav_totals_7"></span></li>
+		  <li><a href="#fuzzing">Fuzzing</a> <span id="generic_nav_totals_8"></span></li>
+	      <li><a href="#vulns">Vulnerability Scanners</a> <span id="generic_nav_totals_9"></span></li>
+	      <li><a href="#crypto">Cryptography</a> <span id="generic_nav_totals_10"></span></li>
+		  <li><a href="#cheatsheets">Useful cheatsheets</a> <span id="generic_nav_totals_11"></span></li>
+		</ul>
+        <hr />
+
+		  
+        <h3 id="cyberchef"><a href="#">Cyberchef</a> <span id="generic_totals_1"></span></h3>		 
+		  <ul>
+           <li data-id="generic_1_1">This tool works in many categories, Encode/Decode, file detection, file carving, etc.  Very very very handy 
+				<a href="https://gchq.github.io/CyberChef/">https://gchq.github.io/CyberChef/</a></li>
+          </ul>
+		  
+
+        <h3 id="strings"><a href="#">Strings</a> <span id="generic_totals_2"></span></h3>
+        <ul>
+          <li data-id="generic_2_1">extract all strings from a file <br>
+  ex:  strings myfile,  or  strings myfile -n 10 (get all strings with length at least 10)</li>
           
         </ul>
-        <h4>next tool</h4>
-        <ul>
-          <li data-id="checklist_1_16">1</li>
-          <li data-id="checklist_1_17">2</li>
-          <li data-id="checklist_1_18">3</li>
-          <li data-id="checklist_1_19">4</li>
-          <li data-id="checklist_1_20">5</li>
-          <li data-id="checklist_1_21">6</li>
-          <li data-id="checklist_1_22">7</li>
-          <li data-id="checklist_1_23">8</li>
-          <li data-id="checklist_1_24">9</li>
-          <li data-id="checklist_1_25">10</li>
-          <li data-id="checklist_1_26">11</li>
-        </ul>
-        <h4>next tool</h4>
-        <ul>
-          <li data-id="checklist_1_27">1</li>
-          <li data-id="checklist_1_28">2</li>
-          <li data-id="checklist_1_29">3</li>
-          <li data-id="checklist_1_30">4</li>
-          <li data-id="checklist_1_31">5</li>
-          <li data-id="checklist_1_32">6</li>
-          <li data-id="checklist_1_33">7</li>
-          <li data-id="checklist_1_34">8</li>
-          <li data-id="checklist_1_35">9</li>
-          <li data-id="checklist_1_36">10</li>
-          <li data-id="checklist_1_37">11</li>
-        </ul>
-        <h4>next tool</h4>
-        <ul>
-          <li data-id="checklist_1_38"><1</li>
-          <li data-id="checklist_1_39">2</li>
-          <li data-id="checklist_1_40">3</li>
-          <li data-id="checklist_1_41">4</li>
-          <li data-id="checklist_1_42">5</li>
-        </ul>
 
-        <h3 id="Hunters_Craft">Next list<span id="checklist_totals_2"></span></h3>
-        <h4>checklist</h4>
+        <h3 id="file"><a href="#">File</a> <span id="generic_totals_3"></span></h3>
         <ul>
-          <li data-id="checklist_2_1">1</li>
-          <li data-id="checklist_2_2">2</li>
-          <li data-id="checklist_2_3">3</li>
-          <li data-id="checklist_2_4">4</li>
-          <li data-id="checklist_2_5">5</li>
-          <li data-id="checklist_2_6">6</li>
-          <li data-id="checklist_2_7">7</li>
-          <li data-id="checklist_2_8">8</li>
-          <li data-id="checklist_2_9">9</li>
-        </ul>
-        <h4>checklist</h4>
-        <ul>
-          <li data-id="checklist_2_10">1</li>
-          <li data-id="checklist_2_11">2</li>
-        </ul>
-      </div>
-      <div class="tab-pane" id="tabSets">
-        <h2>Sets list<span id="sets_overall_total"></span></h2>
-        <h4>sets list</h4>
-        <ul>
-          <li><a href="#AriannaShoes">Arianna's Shoes</a> 1<span id=sets_nav_totals_1></span></li>
-          <li><a href="#AshenHunterSet">Ashen Hunter Set</a> 2<span id=sets_nav_totals_2></span></li>
-          <li><a href="#BlackChurchSet">Black Church Set</a> 3<span id=sets_nav_totals_3></span></li>
-          <li><a href="#BoneAshSet">Bone Ash Set</a> 4<span id=sets_nav_totals_4></span></li>
-          <li><a href="#CainhurstSet">Cainhurst Set</a> 5<span id=sets_nav_totals_5></span></li>
-          <li><a href="#CharredHunterSet">Charred Hunter Set</a> 6<span id=sets_nav_totals_6></span></li>
-          <li><a href="#ChoirSet">Choir Set</a> <span id=sets_nav_totals_7></span></li>
-          <li><a href="#CrowfeatherSet">Crowfeather Set</a> <span id=sets_nav_totals_8></span></li>
-          <li><a href="#CrownOfIllusions">Crown Of Illusions</a> <span id=sets_nav_totals_9></span></li>
-          <li><a href="#DollSet">Doll Set</a> <span id=sets_nav_totals_10></span></li>
-          <li><a href="#ExecutionerSet">Executioner Set</a> <span id=sets_nav_totals_11></span></li>
-          <li><a href="#ForeignSet">Foreign Set</a> <span id=sets_nav_totals_12></span></li>
-          <li><a href="#GascoigneSet">Gascoigne's Set</a> <span id=sets_nav_totals_13></span></li>
-          <li><a href="#GehrmanSet">Gehrman's Set</a> <span id=sets_nav_totals_14></span></li>
-          <li><a href="#GraveguardSet">Graveguard Set</a> <span id=sets_nav_totals_15></span></li>
-          <li><a href="#HenrykHunterSet">Henryk's Hunter Set</a> <span id=sets_nav_totals_16></span></li>
-          <li><a href="#HunterSet">Hunter Set</a> <span id=sets_nav_totals_17></span></li>
-          <li><a href="#KnightSet">Knight's Set</a> <span id=sets_nav_totals_18></span></li>
-          <li><a href="#MadmanSet">Madman Set</a> <span id=sets_nav_totals_19></span></li>
-          <li><a href="#MensisCage">Mensis Cage</a> <span id=sets_nav_totals_20></span></li>
-          <li><a href="#NobleDress">Noble Dress</a> <span id=sets_nav_totals_21></span></li>
-          <li><a href="#ShabbySet">Shabby Set</a> <span id=sets_nav_totals_22></span></li>
-          <li><a href="#StudentSet">Student Set</a> <span id=sets_nav_totals_23></span></li>
-          <li><a href="#TombProspectorSet">Tomb Prospector Set</a> <span id=sets_nav_totals_24></span></li>
-          <li><a href="#WhiteChurchSet">White Church Set</a> <span id=sets_nav_totals_25></span></li>
-          <li><a href="#YaharGulSet">Yahar'Gul Set</a> <span id=sets_nav_totals_26></span></li>
-          <li><a href="#YharnamHunterSet">Yharnam Hunter Set</a> <span id=sets_nav_totals_27></span></li>
-        </ul>
-        <h4>The Old Hunters DLC</h4>
-        <ul>
-          <li><a href="#ButcherSet">Butcher Set</a> <span id=sets_nav_totals_28></span></li>
-          <li><a href="#BradorSet">Brador's Set</a> <span id=sets_nav_totals_29></span></li>
-          <li><a href="#ConstableSet">Constable Set</a> <span id=sets_nav_totals_30></span></li>
-          <li><a href="#DecorativeOldHunterSet">Decorative Old Hunter Set</a> <span id=sets_nav_totals_31></span></li>
-          <li><a href="#EnlargedHead">Enlarged Head</a> <span id=sets_nav_totals_32></span></li>
-          <li><a href="#HarrowedSet">Harrowed Set</a> <span id=sets_nav_totals_33></span></li>
-          <li><a href="#MariaHunterSet">Maria Hunter Set</a> <span id=sets_nav_totals_34></span></li>
-          <li><a href="#OldHunterSet">Old Hunter Set</a> <span id=sets_nav_totals_35></span></li>
-          <li><a href="#YamamuraSet">Yamamura Set</a> <span id=sets_nav_totals_36></span></li>
-        </ul>
-        <hr />
-        <h3>Base game sets</h3>
-        <h4 id="AriannaShoes"><a href="https://bloodborne.wiki.fextralife.com/Arianna%27s+Shoes">Arianna's Shoes</a> <span id="sets_totals_1"></span></h4>
-        <ul>
-          <li data-id="sets_1_1">1</li>
-        </ul>
-        <h4 id="AshenHunterSet"><a href="https://bloodborne.wiki.fextralife.com/Ashen+Hunter+Set">Ashen Hunter Set</a> <span id="sets_totals_2"></span></h4>
-        <ul>
-          <li data-id="sets_2_1">1</li>
-          <li data-id="sets_2_2">2</li>
-          <li data-id="sets_2_3">3</li>
-          <li data-id="sets_2_4">4</li>
-        </ul>
-        <h4 id="BlackChurchSet"><a href="https://bloodborne.wiki.fextralife.com/Black+Church+Set">Black Church Set</a> <span id="sets_totals_3"></span></h4>
-        <ul>
-          <li data-id="sets_3_1">1</li>
-          <li data-id="sets_3_2">2</li>
-          <li data-id="sets_3_3">3</li>
-          <li data-id="sets_3_4">4</li>
-        </ul>
-        <h4 id="BoneAshSet"><a href="https://bloodborne.wiki.fextralife.com/Bone+Ash+Set">Bone Ash Set</a> <span id="sets_totals_4"></span></h4>
-        <ul>
-          <li data-id="sets_4_1">1</li>
-          <li data-id="sets_4_2">2</li>
-          <li data-id="sets_4_3">3</li>
-          <li data-id="sets_4_4">4</li>
-        </ul>
-        
-        
-        <hr />
-      </div>
-      <div class="tab-pane" id="tabInformation">
-        <h2>Information</h2>
-        <ul>
-          <li><a href="#Coldblood_Types">Coldblood Types</a></li>
-        </ul>
-        <hr />
+          
+          <li data-id="generic_3_1">unix file command, determine file type <br>
+  ex: file Templeton_Peck.jpg <br>
+      Templeton_Peck.jpg: JPEG image data, JFIF standard 1.02, aspect ratio, density 100x100, segment length 16, baseline, precision 8, 224x280, components 3</li>
 
-        <h3 id="Coldblood_Types">Coldblood Types</h3>
-        <table class="table-striped">
-          <thead>
-            <tr><th>Name</th><th>Souls</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="http://bloodborne.wiki.fextralife.com/Coldblood+Dew">Coldblood Dew</a></td>
-              <td>(1) 350 / (2) 500 / (3) 1000</td></tr>
-              <tr>
-                <td><a href="http://bloodborne.wiki.fextralife.com/Thick+Coldblood">Thick Coldblood</a></td>
-                <td>(4) 1200 / (5) 1500 / (6) 1800</td>
-              </tr>
-              <tr>
-                <td><a href="http://bloodborne.wiki.fextralife.com/Frenzied+Coldblood">Frenzied Coldblood</a></td>
-                <td>(7) 2000 / (8) 3000 / (9) 5000</td>
-              </tr>
-              <tr>
-                <td><a href="http://bloodborne.wiki.fextralife.com/Kin+Coldblood">Kin Coldblood</a></td>
-                <td>(10) 8000 / (11) 10,000 / (12) 20,000</td>
-              </tr>
-              <tr>
-                <td><a href="http://bloodborne.wiki.fextralife.com/Great+One+Coldblood">Great One Coldblood</a></td>
-                <td>40,000</td>
-              </tr><tr>
-                <td><a href="http://bloodborne.wiki.fextralife.com/Old+Great+One+Coldblood">Old Great One Coldblood</a></td>
-                <td>50,000</td>
-              </tr>
-              <tr>
-                <td><a href="http://bloodborne.wiki.fextralife.com/Revered+Great+One+Coldblood">Revered Great One Coldblood</a></td>
-                <td>100,000 - Not found in game yet</td>
-              </tr>
-            </tbody>
-          </table>
+        </ul>
+		  
+		          <h3 id="hexeditor"><a href="#">Hex editor</a> <span id="generic_totals_4"></span></h3>
+        <ul>
+          
+          <li data-id="generic_4_1">there are a lot of good hex editors out there, and sometimes examining a file manually is enough to find the data you need</li>
+  		  <li data-id="generic_4_2">bless is pretty good, but 010 editor knows binary file signatures so it's pretty much the best</li>
+		  <li data-id="generic_4_3"><a href="https://www.sweetscape.com/download/010editor/">https://www.sweetscape.com/download/010editor/</a></li>
+
+        </ul>
+		  
+		  
+		  <h3 id="xxd"><a href="#">xxd</a> <span id="generic_totals_5"></span> </h3>
+		  <ul>
+		  	<li data-id="generic_5_1"><a href="https://www.tutorialspoint.com/unix_commands/xxd.htm">https://www.tutorialspoint.com/unix_commands/xxd.htm</a></li>
+		  </ul>
+		  
+		  <h3 id="filecarving"><a href="#">File carving</a><span id="generic_totals_6"</span></h3> 
+		  <ul>
+		  	<li data-id="generic_6_1">foremost <br>
+			  ex: foremost myfile -o outputdir</li>
+			<li data-id="generic_6_2">binwalk <br>
+			  ex: binwalk -e myfile</li>  
+		  </ul>
+		  
+		  <h3 id="ports"><a href="#">Ports/Nmap</a><span id="generic_totals_7"</span></h3> 
+		  <ul>
+		  	<li data-id="generic_7_1">syn scan all tcp ports<br>
+			  ex: nmap -sS -p1:65535 somehost</li>
+			<li data-id="generic_7_2">scan all TCP & UDP ports<br>
+			  ex: nmap -sU -sT -p- somehost</li>  
+		  </ul>
+		  
+		  
+		<h3 id="fuzzing"><a href="#">Fuzzing</a><span id="generic_totals_8"></span></h3>
+		  <ul>
+		  	<li data-id="generic_8_1">Hydra</li>
+			<li data-id="generic_8_2">Wfuzz<br>
+    ex: wfuzz -z file,${WORDLIST} -b cookie=value -d "title=FUZZ&body=FUZZ" <br>
+				--sc 500 https://host/api/entry</li>
+		  </ul>
+
+	<h3 id="vulns"><a href="#">Vulnerability Scanners</a><span id="generic_totals_9"></span></h3>
+		  <ul>
+		  	  <li data-id="generic_9_1">nessus</li>
+			  <li data-id="generic_9_2">nikto (web app vuln scanner)</li>
+			  <li data-id="generic_9_3"><a href="https://www.rapid7.com/info/nexpose-community/">https://www.rapid7.com/info/nexpose-community/</a></li>
+		  </ul>
+		  
+<h3 id="crypto"><a href="#">Cryptography/Encryption/Encoding</a><span id="generic_totals_10"></span></h3>
+		  <ul>
+		  
+		  <li data-id="generic_10_1"><a href="https://charcharbinks.com/post/ctf_crypto_for_beginners/">https://charcharbinks.com/post/ctf_crypto_for_beginners/</a></li>
+		  </ul>
+
+  
+<h3 id="cheatsheets"><a href="#">Useful Cheatsheets</a><span id="generic_totals_11"></span></h3>
+		  <ul>
+		  
+		  <li data-id="generic_11_1">usefull commands shell/exploits <a href="https://gtfobins.github.io/">https://gtfobins.github.io/</a></li>
+		  </ul>
+				  
         </div>
-        <div class="tab-pane" id="tabHelp">
-          <h2>Useful Links</h2>
 
-          <h3>Is this a guide?</h3>
-          <p>Nope, not really. This is a set of checklists and information that you can use while playing Dark Souls to make sure you don't miss an item, action, conversation or boss. If you need playthroughs then you can click on the links scattered throughout the page to find them in the wiki.</p>
-
-          <h3>Do I need to follow the playthrough in this exact order?</h3>
-          <p>Bloodborne is not a linear game and has multiple ways of progressing. This is generally the way I like to play through the game, so feel free to follow it if you like or mix it up. You can always jump back and forth and check things off in a different order.</p>
-
-          <h3>Can I use this for multiple characters?</h3>
-          <p>Yup, use the profile selector and buttons at the top right of the page to setup multiple characters.</p>
-
-          <h3>How do I help with feedback, corrections, suggestions or additions?</h3>
-          <p>You can post in <a href="https://www.reddit.com/r/bloodborne/comments/3sfmxs/bloodborne_progress_guide/">this Reddit thread</a> or if you know your way about Git/GitHub then fork <a href="https://github.com/ZKjellberg/bloodborne-cheat-sheet/">my repo</a> and submit a pull request.</p>
-
-          <h3>How does the checklist status get saved?</h3>
-          <p>It gets saved to the local storage in your browser and not to any database or API. So if you are
-            clearing your browser cache make sure not to delete the site data or your checklists will
-            get reset.</p>
-        </div>
-      </div>
     </div>
     <div id="profileModal" class="modal hide fade">
       <div class="modal-header">

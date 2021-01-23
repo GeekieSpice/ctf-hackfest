@@ -36,6 +36,7 @@
 						<li><a href="#tabDns" data-toggle="tab">DNS Tools</a></li>
 						<li><a href="#tabSdr" data-toggle="tab">Software Defined Radio</a></li>
 						<li><a href="#tabLinks" data-toggle="tab">Useful Links</a></li>
+						<li><a href="#tabChecklist" data-toggle="tab">checklist</a></li>
 
 					</ul>
         		<div class="profile" style="float: right;">
@@ -103,6 +104,7 @@
 		</div>
 <!-- END GENERIC TOOLS TAB CONTENT -->
 
+
 <!-- START IMAGES TAB CONTENT -->		
 		<div class="tab-pane" id="tabImages">
 		<div style="display:none;">
@@ -121,7 +123,7 @@
                     <li data-id="images_1_4"><a href="https://linux.die.net/man/1/strings">strings</a></li>
                     <li data-id="images_1_5"><a href="https://stylesuxx.github.io/steganography/">steganography</a></li>
 			
-			<ul>
+			</ul>
 
 		  	<hr />
 			<h3>Examples</h3>
@@ -134,14 +136,14 @@
 
 <!-- START PASSWORDS TAB CONTENT -->		
 		<div class="tab-pane" id="tabPasswords">
-		<div style="display:none;">
+			<div style="display:none;">
 			<h2>Passwords & Wordlists<span id="passwords_overall_total"></span></h2>
                 <ul>
                     <li>Wordlists to scan<span id="passwords_nav_totals_1"></span></li>       
                 </ul>
-        </div>
-        	<hr />
-        	<h3 id="wordlist"><a href="#">Wordlists for pw cracking and fuzzing</a> <span id="passwords_totals_1"></span></h3>	
+        	</div>
+        		<hr />
+        		<h3 id="wordlist"><a href="#">Wordlists for pw cracking and fuzzing</a> <span id="passwords_totals_1"></span></h3>	
 				
 				<ul>
 					<li data-id="passwords_1_1">rockyou</li>
@@ -151,13 +153,12 @@
   					<li data-id="passwords_1_5">cupp gather osint data and make a wordlist, or expand an existing wordlit</li>
 					<li data-id="passwords_1_6">crunch make wordlists from character sets</li>
 				</ul>
-			<h3 id="passwordTools"><a href="#">Password Tools</a><span id="passwords_totals_2"></span></h3>	
+			<h3 id="passwordTools"><a href="#">Password Tools</a></h3>	
 				<ul>
-					<li data-id="passwords_2_1">John the Ripper</li>
-					<li data-id="passwords_2_2">Hashcat</li>
+					<li>John the Ripper</li>
+					<li>Hashcat</li>
 				</ul>	
 
-				</ul>
 				<h3>Examples</h3>
 					<p><code>crunch 3 3 ABCDEFGHIJKLMNOPQRSTUVWXYZ</code> (all combinations of uppercase letters of length 3)</p><br>
 					<p>john itself is pretty good at cracking although a bit slow, however it comes with a ton of great tools for getting hashes out of files</p>	
@@ -181,51 +182,78 @@
 		<div class="tab-pane" id="tabWebapp">
 
         	<hr />
-        	<h3 id="proxies"><a href="#">Proxies</a> <span id="webapp_totals_1"></span></h3>
+        	<h3 id="proxies"><a href="#">Proxies</a></h3>
         		<ul>
           			<li>burpsuite (usually runs on 8080)</li>
 					<li>fiddler (runs on 8888)</li>
 					<li>parosproxy (runs on 8080)</li>
 		  		</ul>
-			<h3 id="crawlers"><a href="#">Crawlers</a> <span id="webapp_totals_2"></span></h3>
+			<h3 id="crawlers"><a href="#">Crawlers</a></h3>
         		<ul>
           			<li>gobuster</li>
 					<li>dirbuster</li>
 					<li>dirsearch</li>
 					<li>dirb</li>
 		  		</ul>		
-	 		<h3 id="specialized"><a href="#">Specialized tools</a> <span id="webapp_totals_3"></span></h3>
+	 		<h3 id="specialized"><a href="#">Specialized tools</a></h3>
         		<ul>
-          			<li>sqlmap (look for sql injection vulns when you find a vulnerable endpoint)
+          			<li>sqlmap (look for sql injection vulns when you find a vulnerable endpoint)</li>
   					<li>gitTools <a href="https://github.com/internetwache/GitTools">https://github.com/internetwache/GitTools</a> (things for exposed .git dirs)</li>
 		  		</ul>	 
 	  	</div>	  
 <!-- END OF WEB APP TAB CONTENT -->	  
 
 
+
+
 <!-- START DNS TAB CONTENT -->	 
-		<div class="tab-pane" id="tabDns">
-<div style="display:none;">
-			<h2>DNS<span id="dns_overall_total"></span></h2>
-                <ul>
-                    <li>DNS tools<span id="dns_nav_totals_1"></span></li>       
-                </ul>
-        </div>
+	<!-- 	<div class="tab-pane" id="tabDns-tools">
+			<div style="display:none;">
+				<h2>DNS<span is="dns-tools_overall_total"></span></h2>
+					<ul>
+						<li>DNS tools <span id="dns-tools_nav_totals_1"></span></li>
+					</ul>
+			</div>
+
         	<hr />
-			<h3><a href="#">DNS Tools</a> <span id="dns_totals_1"></span></h3>
+			<h3><a href="#">DNS Tools</a> <span id="dns-tools_totals_1"></span></h3>
         		<ul>
-          			<li data-id="dns_1_1"><a href="https://tools.kali.org/information-gathering/dnsrecon">dnsrecon</a></li>
-          			<li data-id="dns_1_2"><a href="https://tools.kali.org/information-gathering/fierce">fierce</a></li>
-					<li data-id="dns_1_3"><a href="https://tools.kali.org/information-gathering/dnsenum">dnsenum</a></li>
-		  		</ul>
+          			<li data-id="dns-tools_1_1"></li>
+          			<li data-id="dns-tools_1_2"></li>
+					<li data-id="dns-tools_1_3"></li>
+				</ul>			
 			<hr />
 
 			<h3>Examples</h3>
-				<p><code>dnsrecon -d somehost</code></p>
-				<p><code>dnsrecon -d somehost -t brt wordlist.txt</code></p>
-				<p><code>fierce somehost</code></p>
-		</div>	  	 
+				<p></p>
+				<p></p>
+				<p></p>
+		</div>	   -->
 <!-- END OF DNS TAB CONTENT -->
+<!-- START new dns TAB CONTENT -->		
+		<div class="tab-pane" id="tabDns">
+		<div style="display:none;">
+			<h2>Images <span id="dns_overall_total"></span></h2>
+                <ul>
+                    <li>Image Data Collection<span id="dns_nav_totals_1"></span></li>       
+                </ul>
+        </div>
+                <hr />
+                <em>a small list of tools that may help you look at images differently</em>
+                <h3>Image Data Collection Tools<span id="dns_totals_1"></span></h3>
+                <ul>
+                    <li data-id="dns_1_1"><a href="https://tools.kali.org/information-gathering/dnsrecon">dnsrecon</a></li>
+                    <li data-id="dns_1_2"><a href="https://tools.kali.org/information-gathering/fierce">fierce</a></li>
+                    <li data-id="dns_1_3"><a href="https://tools.kali.org/information-gathering/dnsenum">dnsenum</a></li>
+			</ul>
+
+		  	<hr />
+			<h3>Examples</h3>
+		  		<p><code>dnsrecon -d somehost</code></p>
+		  		<p><code>dnsrecon -d somehost -t brt wordlist.txt</code></p>
+		  		<p><code>fierce somehost</code></p>
+		</div>
+<!-- END new DNS TAB CONTENT -->
 
 
 <!-- START SOFTWARE DEFINED RADIO TAB CONTENT -->	 
@@ -233,13 +261,13 @@
         	<hr />
 			<h3 id="fldigi"><a href="#">fldigi</a> <span id="sdr_totals_1"></span></h3>
         		<p>you can get data straight from the sound card with fldigi</p>
-		  		</ul>
+		  		
 			<h3 id="gqrx"><a href="#">gqrx</a> <span id="sdr_totals_2"></span></h3>
         		<p>reads from an SDR or recorded SDR files and can do a lot of things</p>
 				<p>can also output to a network stream for piping into multimon-ng</p>
 				<p>dirsearch</p>
 				<p>dirb</p>
-		  		</ul>		
+		  				
 	 		<h3 id="multimon"><a href="#">multimon-ng</a> <span id="sdr_totals_3"></span></h3>
         		<p>decoders for a ton of different signal types</p>
 					<ul>
@@ -301,5 +329,6 @@
         <a href="#" id="profileModalDelete" class="btn btn-danger">Delete</a>
       </div>
     </div>
+</div>
   </body>
 </html>

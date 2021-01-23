@@ -5,7 +5,7 @@
   <title>CTF & Hackfest Checklist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="CTF/Hackfest checklist">
-  <meta name="author" content="orangepeelbeef & geekiespice">
+  <meta name="author" content="geekiespice & orangepeelbeef">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -24,452 +24,239 @@
   </script>
 </head>
 <body>
-  <div class="container">
-    <div class="navbar">
-      <div class="navbar-inner">
-        <h1>CTF & Hackfest Checklist</h1>
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#tabHackthrough" data-toggle="tab">Hackthrough</a></li>
-          	<li><a href="#tabImages" data-toggle="tab">Images</a></li>
-			<li><a href="#tabPasswords" data-toggle="tab">Passwords</a></li>
-			<li><a href="#tabWebapp" data-toggle="tab">Web Application Tools</a></li>
-			<li><a href="#tabDns" data-toggle="tab">DNS Tools</a></li>
-			<li><a href="#tabSdr" data-toggle="tab">Software Defined Radio</a></li>
-			<li><a href="#tabGeneric" data-toggle="tab">Generic Tools</a></li>
-			<li><a href="#tabLinks" data-toggle="tab">Useful Links</a></li>
- 
-        </ul>
-        <div class="profile" style="float: right;">
-          <div class="input-append">
-            <select id="profiles">
-            </select>
-            <button class="btn" type="button" id="profileAdd">Add</button>
-            <button class="btn" type="button" id="profileEdit">Edit</button>
-          </div>
-        </div>
-      </div>
-    </div>
+	<div class="container">
+<!-- START NAVIGATION -->		
+		<div class="navbar">
+      		<div class="navbar-inner">
+        		<h1>CTF & Hackfest Checklist</h1>
+        			<ul class="nav nav-tabs">
+          				<li class="active"><a href="#tabGeneric" data-toggle="tab">Generic Tools</a></li>
+          				<li><a href="#tabImages" data-toggle="tab">Images</a></li>
+						<li><a href="#tabPasswords" data-toggle="tab">Passwords</a></li>
+						<li><a href="#tabWebapp" data-toggle="tab">Web Application Tools</a></li>
+						<li><a href="#tabDns" data-toggle="tab">DNS Tools</a></li>
+						<li><a href="#tabSdr" data-toggle="tab">Software Defined Radio</a></li>
+						<li><a href="#tabLinks" data-toggle="tab">Useful Links</a></li>
+					</ul>
+        		<div class="profile" style="float: right;">
+          			<div class="input-append">
+            			<select id="profiles">
+            			</select>
+            			<button class="btn" type="button" id="profileAdd">Add</button>
+            			<button class="btn" type="button" id="profileEdit">Edit</button>
+          			</div>
+        		</div>
+      		</div>
+    	</div>
+<!-- END NAVIGATION -->
 
+
+<!-- START INTRO -->
     <div id="intro">
-      <p>
-        The following is a checklist and set of information for use when attempting CTF or Hackfest style challenges.
+    	<p>The following is a checklist and set of information for use when attempting CTF or Hackfest style challenges.
         This checklist was created by using <a href="https://github.com/smcnabb">Stephen McNabb</a>'s Dark Soul Cheat Sheet code along with the initial content dump from <a href="https://gist.github.com/orangepeelbeef">Orangepeelbeef</a>'s hacking_ctf_tools, and my own limited ctf experience.
-      </p>
+      	</p>
+	</div>
+<!-- END INTRO -->
 
-    </div>
-
-    <div class="tab-content">
-		
-		
-    
-	<div class="tab-pane active" id="tabHackthrough">
-       
-	
-		<h2>Hack All The Things<span id="hackthrough_overall_total"></span></h2>
-        <ul>
-          <li>
-            <a href="#images">Images</a> <span id="hackthrough_nav_totals_1"></span>
-          </li>
-          <li><a href="#passwords">Passwords</a> <span id="hackthrough_nav_totals_2"></span></li>
-          <li><a href="#webapp">Web Application Tools</a> <span id="hackthrough_nav_totals_3"></span></li>
-          <li><a href="#dns">DNS Tools</a> <span id="hackthrough_nav_totals_4"></span></li>
-		  <li><a href="#sdr">Software Defined Radio</a> <span id="hackthrough_nav_totals_5"></span></li>
-          <li><a href="#generic">Generic Tools</a> <span id="hackthrough_nav_totals_6"></span></li>
-          <li><a href="#links">Useful Links</a></li>
-          
-
-        </ul>
-        <hr />
-
-
-		
-		
-        <h3 id="images"><a href="#">Images</a> <span id="hackthrough_totals_1"></span></h3>
-        <ul>
-          <li data-id="hackthrough_1_1">exiftool</li>
-		  <li data-id="hackthrough_1_2">zsteg</li>
-          <li data-id="hackthrough_1_3">hexdump</li>
-          <li data-id="hackthrough_1_4">strings</li>
-          <li data-id="hackthrough_1_5">steganography</li>
-        </ul>
-
-        <h3 id="passwords"><a href="#">Passwords</a> <span id="hackthrough_totals_2"></span></h3>
-        <ul>
-          <li data-id="hackthrough_2_1">john the ripper</li>
-          <li data-id="hackthrough_2_2">hashcat</li>
-			<li data-id="hackthrough_2_3">word lists</li>
-          
-        </ul>
-
-        <h3 id="webapp"><a href="#">Web Application Tools</a> <span id="hackthrough_totals_3"></span></h3>
-        <ul>
-
-          <li data-id="hackthrough_3_1">proxies</li>
-          <li data-id="hackthrough_3_2">crawlers</li>
-          <li data-id="hackthrough_3_3">specialized tools</li>
-        </ul>
-
-		
-			<h3 id="dns"><a href="#">DNS tools</a> <span id="hackthrough_totals_4"></span></h3>
-		
-		<ul>
-		<li data-id="hackthrough_4_1">dnsrecon</li>
-			<li data-id="hackthrough_4_2">dnsrecon bruteforce</li>
-			<li data-id="hackthrough_4_3">fierce</li>
-			<li data-id="hackthrough_4_4">dnsenum</li>
-			
-		</ul>
+<!-- START TAB CONTENT -->
+	<div class="tab-content">
 
 
 
-
-
-
-	
-		
-		<h3 id="sdr"><a href="#">Software Defined Radio</a> <span id="hackthrough_totals_5"></span></h3>
-		
-		<ul>
-		<li data-id="hackthrough_5_1">fldigi</li>
-			<li data-id="hackthrough_5_2">gqrx</li>
-			<li data-id="hackthrough_5_3">multimon-ng</li>
-		</ul>
-
-
-        <h3 id="generic"><a href="#">Generic Tools</a> <span id="hackthrough_totals_6"></span></h3>
-        <ul>
-          <li data-id="hackthrough_6_1">cyberchef</li>
-          <li data-id="hackthrough_6_2">strings</li>
-          <li data-id="hackthrough_6_3">file</li>
-			<li data-id="hackthrough_6_4">hex editor</li>
-			<li data-id="hackthrough_6_5">xxd</li>
-			<li data-id="hackthrough_6_6">file carving</li>
-			<li data-id="hackthrough_6_7">ports/nmap</li>
-			<li data-id="hackthrough_6_8">fuzzing</li>
-			<li data-id="hackthrough_6_9">vulnerability scanners</li>
-			<li data-id="hackthrough_6_10">cryptography</li>
-			<li data-id="hackthrough_6_11">cheatsheets</li>
-			<li data-id="hackthrough_6_1">useful <a href="https://gtfobins.github.io/">commands shell/exploits</a></li>
-        </ul>
-      </div>
-
-		
-
-		
-		
-		
-
-      <div class="tab-pane" id="tabImages">
-
-
-        <hr />
-
-		
-		  
-		 
-        <h3 id="images"><a href="#">Image data collection</a> <span id="images_totals_1"></span></h3>
-        	<ul>
-          		<li data-id="images_1_1"><a href="https://exiftool.org/">exiftool</a></li>
-		  		<li data-id="images_1_2"><a href="https://github.com/zed-0xff/zsteg">zsteg</a></li>	
-          		<li data-id="images_1_3"><a href="https://man7.org/linux/man-pages/man1/hexdump.1.html">hexdump</a></li>
-				<li data-id="images_1_4"><a href="https://linux.die.net/man/1/strings">strings</a></li>
-		  	</ul>
-
-		  	<hr />
-
-		  	<h3>Examples</h3>
-		  	<p><code>exiftool myfile</code></p>
-		  	<p><code>hexdump -C myfile</code></p>
-		  	<p><code>strings myfile</code></p>
-
-      </div>
-
-
-
-		
-		
-		
-
-            <div class="tab-pane" id="tabPasswords">
-        
-
-		  <h2>Passwords<span id="passwords_overall_total"></span></h2>
-        <ul>
-          <li><a href="#john">John the Ripper</a> <span id="passwords_nav_totals_1"></span></li>
-			<li><a href="#hashcat">Hashcat</a> <span id="passwords_nav_totals_2"></span></li>
-			<li><a href="#wordlist">Wordlists</a> <span id="passwords_nav_totals_3"></span></li>
-		</ul>
-        <hr />
-
-		
-		  
-		 
-        <h3 id="john"><a href="#">John the Ripper</a> <span id="passwords_totals_1"></span></h3>
-        	<ul>
-				<p>john itself is pretty good at cracking although a bit slow, however it comes with a ton of great tools for getting hashes out of files</p>
-          		<li data-id="passwords_1_1">office2john, pdf2john (ex: john filename)</li>
-				<li data-id="passwords_1_2">pdf2john (ex: john filename)</li>
-				<li data-id="passwords_1_3">ex: john filename</li>
-		  	</ul>
-		
-				<h3 id="hashcat"><a href="#">HashCat</a> <span id="passwords_totals_2"></span></h3>
-				<ul>
-					<p>hashcat is generally much faster than john because it uses GPU instead of CPU, it is a lot more complicated and has a ton of modes and rules. hashcat can use the hashes gathered with office2john, etc</p>
-			<li data-id="passwords_2_1">ex cracking word 2013 document pw: <br>
-  										hashcat -a 0 -m 9600 --username office_hash.txt rockyou.txt  -O</li>
-  			<li data-id="passwords_2_2">ex usage of rules, you can use multiple<br>
-  										hashcat -a 0 -m 0 cracklist.db wordlist.txt -r /usr/share/hashcat/rules/best64.rule -O</li>
-  			<li data-id="passwords_2_3">ex combination attack left and right wordlists (change the order if you want to try them flipped)<br>
-  										hashcat -a 1 -m 0 cracklist.db biology rockyou.txt</li>
-  			<li data-id="passwords_2_4">ex incremental mask attack (adds digits and symbols to the end of everything in wordlist)<br>
-  										hashcat -a 6 -m 0 cracklist.db francais.txt -1 ?d?s ?1?1?1?1?1 -i</li>
-  			<li data-id="passwords_2_5">ex incremental mask attack (add digits and symbols to the front of everything in wordlist)<br>
-										hashcat -a 7 -m 0 cracklist.db -1 ?d?s ?1?1?1?1?1 francais.txt -i<br></li>
+<!-- START GENERIC TOOLS TAB CONTENT -->		
+		<div class="tab-pane active" id="tabGeneric">
+			<hr>
+  			<h2>Generic Tools</h2>
+        		<ul>
+          			<li></li>
 				</ul>
-				
-	<h3 id="wordlist"><a href="#">Wordlists for pw cracking and fuzzing</a> <span id="passwords_totals_3"></span></h3>	
-<a href="https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/big-list-of-naughty-strings.txt">https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/big-list-of-naughty-strings.txt</a></p>
-	<ul><p>
-
-				<li data-id="passwords_3_1">rockyou</li>
-				<li data-id="passwords_3_2">dirb (usually /usr/share/dirb/wordlists/)</li>
-				<li data-id="passwords_3_3">CeWL takes a webpage and makes a wordlist out of it (seems buggy in testing, especially with unicode characters)</li>
-		<li data-id="passwords_3_4">wyd takes a file and makes a wordlist</li>
-  <li data-id="passwords_3_5">cupp gather osint data and make a wordlist, or expand an existing wordlit</li>
-		<li data-id="passwords_3_6">crunch make wordlists from character sets<br/>
-			ex:  crunch 3 3 ABCDEFGHIJKLMNOPQRSTUVWXYZ   (all combinations of uppercase letters of length 3)</li>
-				</ul>		
-		
-
-      </div>
-	  
-
-	  
-
- <div class="tab-pane" id="tabWebapp">
-        
-
-		  <h2>Web Application Tools<span id="webapp_overall_total"></span></h2>
-        <ul>
-          <li><a href="#proxies">Proxies</a> <span id="webapp_nav_totals_1"></span></li>
-			<li><a href="#crawlers">Crawlers</a> <span id="webapp_nav_totals_2"></span></li>
-			<li><a href="#specialized">Specialized tools</a> <span id="webapp_nav_totals_3"></span></li>
-		</ul>
-        <hr />
-
-		
-		  
-		 
-        <h3 id="proxies"><a href="#">Proxies</a> <span id="webapp_totals_1"></span></h3>
-        	<ul>
-          		<li data-id="webapp_1_1">burpsuite (usually runs on 8080)</li>
-				<li data-id="webapp_1_2">fiddler (runs on 8888)</li>
-				<li data-id="webapp_1_3">parosproxy (runs on 8080)</li>
-		  	</ul>
-	
-        <h3 id="crawlers"><a href="#">Crawlers</a> <span id="webapp_totals_2"></span></h3>
-        	<ul>
-          		<li data-id="webapp_2_1">gobuster</li>
-				<li data-id="webapp_2_2">dirbuster</li>
-				<li data-id="webapp_2_3">dirsearch</li>
-				<li data-id="webapp_2_4">dirb</li>
-		  	</ul>		
-	 
-        <h3 id="specialized"><a href="#">Specialized tools</a> <span id="webapp_totals_3"></span></h3>
-        	<ul>
-          		<li data-id="webapp_3_1">sqlmap (look for sql injection vulns when you find a vulnerable endpoint)
-  gitTools https://github.com/internetwache/GitTools (things for exposed .git dirs)</li>
-		  	</ul>	 
-	  </div>	  
-	  
-
-
-	 
-<div class="tab-pane" id="tabDns">
-        
-        <hr />
-
-        <h3 id="recon"><a href="#">DNS Tools</a> <span id="dns_totals_1"></span></h3>
-        	<ul>
-          		<li data-id="dns_1_1"><a href="https://tools.kali.org/information-gathering/dnsrecon">dnsrecon</a></li>
-          		<li data-id="dns_1_2"><a href="https://tools.kali.org/information-gathering/fierce">fierce</a></li>
-				<li data-id="dns_1_3"><a href="https://tools.kali.org/information-gathering/dnsenum">dnsenum</a></li>
-		  	</ul>
-
-<hr />
-
-<h3>Examples</h3>
-<p><code>dnsrecon -d somehost</code></p>
-<p><code>dnsrecon -d somehost -t brt wordlist.txt</code></p>
-<p><code>fierce somehost</code></p>
-
-
-	 
-	  </div>	  	 
-	 
-	 
-<div class="tab-pane" id="tabSdr">
-        
-	
-		  <h2>Software Defined Radio<span id="sdr_overall_total"></span></h2>
-        <ul>
-          <li><a href="#fldigi">fldigi</a> <span id="sdr_nav_totals_1"></span></li>
-			<li><a href="#gqrx">gqrx</a> <span id="sdr_nav_totals_2"></span></li>
-			<li><a href="#multimon">multimon-ng</a> <span id="sdr_nav_totals_3"></span></li>
-		</ul>
-        <hr />
-
-        <h3 id="fldigi"><a href="#">fldigi</a> <span id="sdr_totals_1"></span></h3>
-        	<ul>
-          		<li data-id="sdr_1_1">you can get data straight from the sound card with fldigi</li>
-		  	</ul>
-	
-        <h3 id="gqrx"><a href="#">gqrx</a> <span id="sdr_totals_2"></span></h3>
-        	<ul>
-          		<li data-id="sdr_2_1">reads from an SDR or recorded SDR files and can do a lot of things</li>
-				<li data-id="sdr_2_2">can also output to a network stream for piping into multimon-ng</li>
-				<li data-id="sdr_2_3">dirsearch</li>
-				<li data-id="sdr_2_4">dirb</li>
-		  	</ul>		
-	 
-        <h3 id="multimon"><a href="#">multimon-ng</a> <span id="sdr_totals_3"></span></h3>
-        	
-				<p>decoders for a ton of different signal types</p>
-			<ul>
-				<li data-id="sdr_3_1">morse</li>
-				<li data-id="sdr_3_2">pocsag</li>
-				<li data-id="sdr_3_3">very nice chained from gqrx via sox</li>
-				<li data-id="sdr_3_4"><a href="https://www.bastibl.net/pocsag/">https://www.bastibl.net/pocsag/</a></li>
-		  	</ul>	 
-	  </div>	  	 
-
-      <div class="tab-pane" id="tabGeneric">
-   
-		<h2>Generic Tools<span id="generic_overall_total"></span></h2>
-        <ul>
-          <li><a href="#cyberchef">Cyberchef</a> <span id="generic_nav_totals_1"></span></li>
-          <li><a href="#strings">Strings</a> <span id="generic_nav_totals_2"></span></li>
-          <li><a href="#file">File</a> <span id="generic_nav_totals_3"></span></li>
-          <li><a href="#hexeditor">Hex editor</a> <span id="generic_nav_totals_4"></span></li>
-		  <li><a href="#xxd">xxd</a> <span id="generic_nav_totals_5"></span></li>
-		  <li><a href="#filecarving">File carving</a> <span id="generic_nav_totals_6"></span></li>
-		  <li><a href="#ports">Ports/nmap</a> <span id="generic_nav_totals_7"></span></li>
-		  <li><a href="#fuzzing">Fuzzing</a> <span id="generic_nav_totals_8"></span></li>
-	      <li><a href="#vulns">Vulnerability Scanners</a> <span id="generic_nav_totals_9"></span></li>
-	      <li><a href="#crypto">Cryptography</a> <span id="generic_nav_totals_10"></span></li>
-		  <li><a href="#cheatsheets">Useful cheatsheets</a> <span id="generic_nav_totals_11"></span></li>
-		</ul>
-        <hr />
-
-		  
-        <h3 id="cyberchef"><a href="#">Cyberchef</a> <span id="generic_totals_1"></span></h3>		 
-		  <ul>
-           <li data-id="generic_1_1">This tool works in many categories, Encode/Decode, file detection, file carving, etc.  Very very very handy 
-				<a href="https://gchq.github.io/CyberChef/">https://gchq.github.io/CyberChef/</a></li>
-          </ul>
-		  
-
-        <h3 id="strings"><a href="#">Strings</a> <span id="generic_totals_2"></span></h3>
-        <ul>
-          <li data-id="generic_2_1">extract all strings from a file <br>
-  ex:  strings myfile,  or  strings myfile -n 10 (get all strings with length at least 10)</li>
-          
-        </ul>
-
-        <h3 id="file"><a href="#">File</a> <span id="generic_totals_3"></span></h3>
-        <ul>
-          
-          <li data-id="generic_3_1">unix file command, determine file type <br>
-  ex: file Templeton_Peck.jpg <br>
-      Templeton_Peck.jpg: JPEG image data, JFIF standard 1.02, aspect ratio, density 100x100, segment length 16, baseline, precision 8, 224x280, components 3</li>
-
-        </ul>
-		  
-		          <h3 id="hexeditor"><a href="#">Hex editor</a> <span id="generic_totals_4"></span></h3>
-        <ul>
-          
-          <li data-id="generic_4_1">there are a lot of good hex editors out there, and sometimes examining a file manually is enough to find the data you need</li>
-  		  <li data-id="generic_4_2">bless is pretty good, but 010 editor knows binary file signatures so it's pretty much the best</li>
-		  <li data-id="generic_4_3"><a href="https://www.sweetscape.com/download/010editor/">https://www.sweetscape.com/download/010editor/</a></li>
-
-        </ul>
-		  
-		  
-		  <h3 id="xxd"><a href="#">xxd</a> <span id="generic_totals_5"></span> </h3>
-		  <ul>
-		  	<li data-id="generic_5_1"><a href="https://www.tutorialspoint.com/unix_commands/xxd.htm">https://www.tutorialspoint.com/unix_commands/xxd.htm</a></li>
-		  </ul>
-		  
-		  <h3 id="filecarving"><a href="#">File carving</a><span id="generic_totals_6"</span></h3> 
-		  <ul>
-		  	<li data-id="generic_6_1">foremost <br>
-			  ex: foremost myfile -o outputdir</li>
-			<li data-id="generic_6_2">binwalk <br>
-			  ex: binwalk -e myfile</li>  
-		  </ul>
-		  
-		  <h3 id="ports"><a href="#">Ports/Nmap</a><span id="generic_totals_7"</span></h3> 
-		  <ul>
-		  	<li data-id="generic_7_1">syn scan all tcp ports<br>
-			  ex: nmap -sS -p1:65535 somehost</li>
-			<li data-id="generic_7_2">scan all TCP & UDP ports<br>
-			  ex: nmap -sU -sT -p- somehost</li>  
-		  </ul>
-		  
-		  
-		<h3 id="fuzzing"><a href="#">Fuzzing</a><span id="generic_totals_8"></span></h3>
-		  <ul>
-		  	<li data-id="generic_8_1">Hydra</li>
-			<li data-id="generic_8_2">Wfuzz<br>
-    ex: wfuzz -z file,${WORDLIST} -b cookie=value -d "title=FUZZ&body=FUZZ" <br>
-				--sc 500 https://host/api/entry</li>
-		  </ul>
-
-	<h3 id="vulns"><a href="#">Vulnerability Scanners</a><span id="generic_totals_9"></span></h3>
-		  <ul>
-		  	  <li data-id="generic_9_1">nessus</li>
-			  <li data-id="generic_9_2">nikto (web app vuln scanner)</li>
-			  <li data-id="generic_9_3"><a href="https://www.rapid7.com/info/nexpose-community/">https://www.rapid7.com/info/nexpose-community/</a></li>
-		  </ul>
-		  
-<h3 id="crypto"><a href="#">Cryptography/Encryption/Encoding</a><span id="generic_totals_10"></span></h3>
-		  <ul>
-		  
-		  <li data-id="generic_10_1"><a href="https://charcharbinks.com/post/ctf_crypto_for_beginners/">https://charcharbinks.com/post/ctf_crypto_for_beginners/</a></li>
-		  </ul>
-
   
-<h3 id="cheatsheets"><a href="#">Useful Cheatsheets</a><span id="generic_totals_11"></span></h3>
-		  <ul>
-		  
-		  <li data-id="generic_11_1">usefull commands shell/exploits <a href="https://gtfobins.github.io/">https://gtfobins.github.io/</a></li>
-		  </ul>
-		  
-        </div>
+			<h4><a href="https://github.com/gchq/CyberChef">Cyberchef</a></h4>		 
+           		<p>This tool works in many categories, Encode/Decode, file detection, file carving, etc.  Very very very handy </p>
+			<h4><a href="https://linux.die.net/man/1/strings">Strings</a></h4>
+        		<p>extract all strings from a file</p>
+        		<p><code>strings myfile</code></p>
+        		<p><code>strings myfile -n10</code> (get all strings with length at least 10)</p>
+			<h4><a href="https://man7.org/linux/man-pages/man1/file.1.html">File</a></h4>
+        		<p>unix file command, determine file type</p>
+  				<p><code>file Templeton_Peck.jpg</code></p>
+      			<p><code>Templeton_Peck.jpg: JPEG image data, JFIF standard 1.02, aspect ratio, density 100x100, segment length 16, baseline, precision 8, 224x280, components 3</code></p>
+ 			<h4><a href="https://hexed.it/">Hex editor</a></h4>
+        		<p>there are a lot of good hex editors out there, and sometimes examining a file manually is enough to find the data you need</p>
+ 				<p>bless is pretty good, but 010 editor knows binary file signatures so it's pretty much the best</p>
+		  	<h4><a href="https://resources.infosecinstitute.com/topic/file-carving/">File carving</a></h4> 
+		  		<p>foremost</p>
+		  		<p><code>foremost myfile -o outputdir</code></p>
+				<p>binwalk</p>
+			  	<p><code>binwalk -e myfile</code></p>  
+		  	<h4><a href="#">Ports/Nmap</a></h4> 
+		  		<p>syn scan all tcp ports</p>
+			  	<p><code>nmap -sS -p1:65535 somehost</code></p>
+				<p>scan all TCP & UDP ports</p>
+			  	<p><code>nmap -sU -sT -p- somehost</code></p> 
+		  	<h4><a href="#">Fuzzing</a></h4>
+		  		<p>Hydra</p>
+				<p>Wfuzz</p>
+    			<p><code>fuzz -z file,${WORDLIST} -b cookie=value -d "title=FUZZ&body=FUZZ" --sc 500 https://host/api/entry</code></p>
+			<h4><a href="#">Vulnerability Scanners</a></h4>
+		  		<p>nessus</p>
+			  	<p>nikto (web app vuln scanner)</p>
+		</div>
+<!-- END GENERIC TOOLS TAB CONTENT -->
+
+<!-- START IMAGES TAB CONTENT -->		
+		<div class="tab-pane" id="tabImages">
+			<hr />
+			<h3 id="images"><a href="#">Image data collection</a></h3>
+        		<ul>
+          			<li data-id="images_1_1"><a href="https://exiftool.org/">exiftool</a></li>
+		  			<li data-id="images_1_2"><a href="https://github.com/zed-0xff/zsteg">zsteg</a></li>	
+          			<li data-id="images_1_3"><a href="https://man7.org/linux/man-pages/man1/hexdump.1.html">hexdump</a></li>
+					<li data-id="images_1_4"><a href="https://linux.die.net/man/1/strings">strings</a></li>
+					<li data-id="images_1_5"><a href="https://stylesuxx.github.io/steganography/">steganography</a></li>
+		  		</ul>
+			<hr />
+			<h3>Examples</h3>
+		  		<p><code>exiftool myfile</code></p>
+		  		<p><code>hexdump -C myfile</code></p>
+		  		<p><code>strings myfile</code></p>
+		</div>
+<!-- END IMAGES TAB CONTENT -->
+
+
+<!-- START PASSWORDS TAB CONTENT -->		
+		<div class="tab-pane" id="tabPasswords">
+
+        	<hr />
+        	<h3 id="wordlist"><a href="#">Wordlists for pw cracking and fuzzing</a> <span id="passwords_totals_1"></span></h3>	
+				
+				<ul>
+					<li data-id="passwords_1_1">rockyou</li>
+					<li data-id="passwords_1_2">dirb</li>
+					<li data-id="passwords_1_3">CeWL takes a webpage and makes a wordlist out of it (seems buggy in testing, especially with unicode characters)</li>
+					<li data-id="passwords_1_4">wyd takes a file and makes a wordlist</li>
+  					<li data-id="passwords_1_5">cupp gather osint data and make a wordlist, or expand an existing wordlit</li>
+					<li data-id="passwords_1_6">crunch make wordlists from character sets</li>
+				</ul>
+			<h3 id="passwordTools"><a href="#">Password Tools</a><span id="passwords_totals_2"></span></h3>	
+				<ul>
+					<li data-id="passwords_2_1">John the Ripper</li>
+					<li data-id="passwords_2_2">Hashcat</li>
+				</ul>	
+
+				</ul>
+				<h3>Examples</h3>
+					<p><code>crunch 3 3 ABCDEFGHIJKLMNOPQRSTUVWXYZ</code> (all combinations of uppercase letters of length 3)</p><br>
+					<p>john itself is pretty good at cracking although a bit slow, however it comes with a ton of great tools for getting hashes out of files</p>	
+					<p><code>john filename</code></p><br>
+					<p>hashcat is generally much faster than john because it uses GPU instead of CPU, it is a lot more complicated and has a ton of modes and rules. hashcat can use the hashes gathered with office2john, etc</p>
+					<p>ex cracking word 2013 document pw:</p> 
+					<p><code>hashcat -a 0 -m 9600 --username office_hash.txt rockyou.txt  -O</code></p><br>
+					<p>ex usage of rules, you can use multiple</p>
+					<p><code>hashcat -a 0 -m 0 cracklist.db wordlist.txt -r /usr/share/hashcat/rules/best64.rule -O</code></p>
+					<p>ex combination attack left and right wordlists (change the order if you want to try them flipped)</p>
+					<p><code>hashcat -a 1 -m 0 cracklist.db biology rockyou.txt</code></p><br>
+					<p>ex incremental mask attack (adds digits and symbols to the end of everything in wordlist)</p>
+					<p><code>hashcat -a 6 -m 0 cracklist.db francais.txt -1 ?d?s ?1?1?1?1?1 -i</code></p><br>
+					<p>ex incremental mask attack (add digits and symbols to the front of everything in wordlist)</p>
+					<p><code>hashcat -a 7 -m 0 cracklist.db -1 ?d?s ?1?1?1?1?1 francais.txt -i</code></p>
+		</div>
+<!-- END PASSWORDS TAB CONTENT -->	  
+
+	  
+<!-- START WEB APP TAB CONTENT -->
+		<div class="tab-pane" id="tabWebapp">
+
+        	<hr />
+        	<h3 id="proxies"><a href="#">Proxies</a> <span id="webapp_totals_1"></span></h3>
+        		<ul>
+          			<li>burpsuite (usually runs on 8080)</li>
+					<li>fiddler (runs on 8888)</li>
+					<li>parosproxy (runs on 8080)</li>
+		  		</ul>
+			<h3 id="crawlers"><a href="#">Crawlers</a> <span id="webapp_totals_2"></span></h3>
+        		<ul>
+          			<li>gobuster</li>
+					<li>dirbuster</li>
+					<li>dirsearch</li>
+					<li>dirb</li>
+		  		</ul>		
+	 		<h3 id="specialized"><a href="#">Specialized tools</a> <span id="webapp_totals_3"></span></h3>
+        		<ul>
+          			<li>sqlmap (look for sql injection vulns when you find a vulnerable endpoint)
+  					<li>gitTools <a href="https://github.com/internetwache/GitTools">https://github.com/internetwache/GitTools</a> (things for exposed .git dirs)</li>
+		  		</ul>	 
+	  	</div>	  
+<!-- END OF WEB APP TAB CONTENT -->	  
+
+
+<!-- START DNS TAB CONTENT -->	 
+		<div class="tab-pane" id="tabDns">
+        	<hr />
+			<h3 id="recon"><a href="#">DNS Tools</a> <span id="dns_totals_1"></span></h3>
+        		<ul>
+          			<li data-id="dns_1_1"><a href="https://tools.kali.org/information-gathering/dnsrecon">dnsrecon</a></li>
+          			<li data-id="dns_1_2"><a href="https://tools.kali.org/information-gathering/fierce">fierce</a></li>
+					<li data-id="dns_1_3"><a href="https://tools.kali.org/information-gathering/dnsenum">dnsenum</a></li>
+		  		</ul>
+			<hr />
+
+			<h3>Examples</h3>
+				<p><code>dnsrecon -d somehost</code></p>
+				<p><code>dnsrecon -d somehost -t brt wordlist.txt</code></p>
+				<p><code>fierce somehost</code></p>
+		</div>	  	 
+<!-- END OF DNS TAB CONTENT -->
+
+
+<!-- START SOFTWARE DEFINED RADIO TAB CONTENT -->	 
+	 	<div class="tab-pane" id="tabSdr">
+        	<hr />
+			<h3 id="fldigi"><a href="#">fldigi</a> <span id="sdr_totals_1"></span></h3>
+        		<p>you can get data straight from the sound card with fldigi</p>
+		  		</ul>
+			<h3 id="gqrx"><a href="#">gqrx</a> <span id="sdr_totals_2"></span></h3>
+        		<p>reads from an SDR or recorded SDR files and can do a lot of things</p>
+				<p>can also output to a network stream for piping into multimon-ng</p>
+				<p>dirsearch</p>
+				<p>dirb</p>
+		  		</ul>		
+	 		<h3 id="multimon"><a href="#">multimon-ng</a> <span id="sdr_totals_3"></span></h3>
+        		<p>decoders for a ton of different signal types</p>
+					<ul>
+						<li>morse</li>
+						<li>pocsag</li>
+						<li>very nice chained from gqrx via sox</li>
+		  			</ul>	 
+	  	</div>	  	 
+<!-- END SOFTWARE DEFINED RADIO TAB CONTENT -->
 
 
 
 
-<div class="tab-pane" id="tabLinks">
-        
-        <hr />
 
-	   <h3 id="links">Useful Links</h3>
-   <p><a href="https://gtfobins.github.io/">https://gtfobins.github.io/</a></p>
-   <p><a href="https://www.acunetix.com/websitesecurity/directory-traversal/">https://www.acunetix.com/websitesecurity/directory-traversal/</a></p>
-   <p><a href="https://www.greycampus.com/opencampus/ethical-hacking/enumeration-and-its-types">https://www.greycampus.com/opencampus/ethical-hacking/enumeration-and-its-types</a></p> 
-   <p><a href="https://www.pngegg.com/">https://www.pngegg.com/</a></p> 
-   <p><a href="https://0xrick.github.io/lists/stego/">https://0xrick.github.io/lists/stego/</a></p>  
-   <p><a href="https://tryhackme.com">https://tryhackme.com</a></p> 
-   <p><a href="https://overthewire.org/wargames/bandit/">https://overthewire.org/wargames/bandit/</a></p> 
-
-
-
-
-
-	 
-	  </div>	  
-
+<!-- START USEFUL LINKS TAB CONTENT -->
+		<div class="tab-pane" id="tabLinks">
+        	<hr />
+        		<h3 id="links">Useful Links</h3>
+   				<p><a href="https://gtfobins.github.io/">https://gtfobins.github.io/</a></p>
+   				<p><a href="https://www.acunetix.com/websitesecurity/directory-traversal/">https://www.acunetix.com/websitesecurity/directory-traversal/</a></p>
+   				<p><a href="https://www.greycampus.com/opencampus/ethical-hacking/enumeration-and-its-types">https://www.greycampus.com/opencampus/ethical-hacking/enumeration-and-its-types</a></p> 
+   				<p><a href="https://www.pngegg.com/">https://www.pngegg.com/</a></p> 
+   				<p><a href="https://0xrick.github.io/lists/stego/">https://0xrick.github.io/lists/stego/</a></p>
+   				<p><a href="https://www.bastibl.net/pocsag/">https://www.bastibl.net/pocsag/</a></p>  
+   				<p><a href="https://tryhackme.com">https://tryhackme.com</a></p> 
+   				<p><a href="https://overthewire.org/wargames/bandit/">https://overthewire.org/wargames/bandit/</a></p>
+   				<p><a href="https://gchq.github.io/CyberChef/">https://gchq.github.io/CyberChef/</a></p>
+   				<p><a href="https://www.sweetscape.com/download/010editor/">https://www.sweetscape.com/download/010editor/</a></p>
+				<p><a href="https://www.tutorialspoint.com/unix_commands/xxd.htm">https://www.tutorialspoint.com/unix_commands/xxd.htm</a></p>
+				<p><a href="https://www.rapid7.com/info/nexpose-community/">https://www.rapid7.com/info/nexpose-community/</a></p>
+				<p><a href="https://charcharbinks.com/post/ctf_crypto_for_beginners/">https://charcharbinks.com/post/ctf_crypto_for_beginners/</a></p>
+				<p><a href="https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/big-list-of-naughty-strings.txt">https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/big-list-of-naughty-strings.txt</a></p>
+				<p><a href="https://github.com/internetwache/GitTools">https://github.com/internetwache/GitTools</a></p>
+	  	</div>	  
+<!-- END OF USEFUL LINKS TAB CONTENT -->
 
 
 
